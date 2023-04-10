@@ -1,0 +1,42 @@
+
+
+<Html>    
+  <Head> 
+
+        <script>
+            
+         (function (popupFunc) {
+                var script = document.createElement('script');
+                var firstScript = document.getElementsByTagName('script')[0];
+                window[popupFunc] = window[popupFunc] || function () {
+                    (window[popupFunc].actions = window[popupFunc].actions || []).push(arguments);
+                };
+                window[popupFunc].last_init = 1 * new Date()
+                window['ACPopupFuncNamePlaceholder'] = popupFunc;
+                script.async = true;
+                script.src = 'https://pxl.egor-bronin.dev.altkraft.com' + '/popup/v1/popupLibrary.js';
+                firstScript.parentNode.insertBefore(script, firstScript);
+         })('acpopup');
+    
+        </script>
+        <script>
+            
+      acpopup('create', 'AP-NyopLnziGWYnhHyk');
+      acpopup('show', 'AP-NyopLnziGWYnhHyk');
+    
+        </script>
+    
+    
+    <title>  
+      Example of Paragraph tag  
+    </title>  
+   </Head>  
+   <Body>   
+     <p> <!-- It is a Paragraph tag for creating the paragraph -->  
+     <b> P - HTML </b> stands for <i> <u> Hyper Text Markup Language. </u> </i> It is used to create a web pages and applications. This language   
+         is easily understandable by the user and also be modifiable. It is actually a Markup language, hence it provides a flexible way for designing the            web pages along with the text.   
+    </p>  
+          HTML file is made up of different elements. <b> An element </b> is a collection of <i> start tag, end tag, attributes and the text between them</i>.   
+     </p>  
+    </Body>  
+ </Html>  
