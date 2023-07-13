@@ -1,0 +1,67 @@
+File: trkwebctrl
+Build ID: eb53bae02d1c0cebf181d6aa585422bdebdd5c7b
+Type: delay
+Time: Jul 11, 2023 at 12:49pm (MSK)
+Showing nodes accounting for 374.85s, 99.38% of 377.21s total
+Dropped 147 nodes (cum <= 1.89s)
+      flat  flat%   sum%        cum   cum%
+   374.85s 99.38% 99.38%    374.85s 99.38%  sync.(*Mutex).Unlock (partial-inline)
+         0     0% 99.38%    377.03s   100%  github.com/gin-gonic/gin.(*Context).Next (inline)
+         0     0% 99.38%    376.88s 99.91%  github.com/gin-gonic/gin.(*Engine).ServeHTTP
+         0     0% 99.38%    377.01s 99.95%  github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+         0     0% 99.38%    373.34s 98.97%  github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+         0     0% 99.38%    102.54s 27.18%  github.com/syndtr/goleveldb/leveldb.(*DB).Get
+         0     0% 99.38%    102.45s 27.16%  github.com/syndtr/goleveldb/leveldb.(*DB).get
+         0     0% 99.38%      5.68s  1.50%  github.com/syndtr/goleveldb/leveldb.(*dbIter).Seek
+         0     0% 99.38%         5s  1.32%  github.com/syndtr/goleveldb/leveldb.(*tFilesArrayIndexer).Get
+         0     0% 99.38%    101.54s 26.92%  github.com/syndtr/goleveldb/leveldb.(*tOps).find
+         0     0% 99.38%      5.20s  1.38%  github.com/syndtr/goleveldb/leveldb.(*tOps).newIterator
+         0     0% 99.38%    101.54s 26.92%  github.com/syndtr/goleveldb/leveldb.(*version).get
+         0     0% 99.38%    101.54s 26.92%  github.com/syndtr/goleveldb/leveldb.(*version).get.func1
+         0     0% 99.38%    101.54s 26.92%  github.com/syndtr/goleveldb/leveldb.(*version).walkOverlapping
+         0     0% 99.38%    106.76s 28.30%  github.com/syndtr/goleveldb/leveldb/cache.(*Cache).Get
+         0     0% 99.38%    106.63s 28.27%  github.com/syndtr/goleveldb/leveldb/cache.(*NamespaceGetter).Get (inline)
+         0     0% 99.38%         5s  1.32%  github.com/syndtr/goleveldb/leveldb/iterator.(*arrayIteratorIndexer).Get
+         0     0% 99.38%      5.01s  1.33%  github.com/syndtr/goleveldb/leveldb/iterator.(*indexedIterator).Seek
+         0     0% 99.38%      5.01s  1.33%  github.com/syndtr/goleveldb/leveldb/iterator.(*indexedIterator).setData
+         0     0% 99.38%      5.62s  1.49%  github.com/syndtr/goleveldb/leveldb/iterator.(*mergedIterator).Seek
+         0     0% 99.38%    101.44s 26.89%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).Find (inline)
+         0     0% 99.38%      5.18s  1.37%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).NewIterator
+         0     0% 99.38%    101.44s 26.89%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).find
+         0     0% 99.38%     11.95s  3.17%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).getFilterBlock
+         0     0% 99.38%     94.66s 25.10%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).getIndexBlock
+         0     0% 99.38%     94.68s 25.10%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).readBlockCached
+         0     0% 99.38%     11.95s  3.17%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).readFilterBlockCached
+         0     0% 99.38%     10.04s  2.66%  lab.altkraft.com/altkraft/ledisdb/ledis.(*DB).HExpire
+         0     0% 99.38%     93.79s 24.86%  lab.altkraft.com/altkraft/ledisdb/ledis.(*DB).HGet
+         0     0% 99.38%      6.36s  1.69%  lab.altkraft.com/altkraft/ledisdb/ledis.(*DB).HGetAll
+         0     0% 99.38%    233.44s 61.89%  lab.altkraft.com/altkraft/ledisdb/ledis.(*DB).HSet
+         0     0% 99.38%     10.04s  2.66%  lab.altkraft.com/altkraft/ledisdb/ledis.(*DB).hExpireAt
+         0     0% 99.38%      8.73s  2.31%  lab.altkraft.com/altkraft/ledisdb/ledis.(*DB).hSetItem
+         0     0% 99.38%    233.45s 61.89%  lab.altkraft.com/altkraft/ledisdb/ledis.(*batch).Unlock
+         0     0% 99.38%    233.45s 61.89%  lab.altkraft.com/altkraft/ledisdb/ledis.(*dbBatchLocker).Unlock
+         0     0% 99.38%    102.54s 27.18%  lab.altkraft.com/altkraft/ledisdb/store.(*DB).Get
+         0     0% 99.38%      5.90s  1.56%  lab.altkraft.com/altkraft/ledisdb/store.(*DB).RangeLimitIterator
+         0     0% 99.38%      5.68s  1.50%  lab.altkraft.com/altkraft/ledisdb/store.(*Iterator).Seek (inline)
+         0     0% 99.38%      5.68s  1.50%  lab.altkraft.com/altkraft/ledisdb/store.NewRangeLimitIterator (inline)
+         0     0% 99.38%      5.68s  1.50%  lab.altkraft.com/altkraft/ledisdb/store.rangeLimitIterator
+         0     0% 99.38%    102.54s 27.18%  lab.altkraft.com/altkraft/ledisdb/store/goleveldb.(*DB).Get
+         0     0% 99.38%      5.68s  1.50%  lab.altkraft.com/altkraft/ledisdb/store/goleveldb.(*Iterator).Seek
+         0     0% 99.38%     32.42s  8.60%  log.(*Logger).Output
+         0     0% 99.38%     18.84s  4.99%  log.(*Logger).Printf
+         0     0% 99.38%     10.87s  2.88%  log.(*Logger).Println
+         0     0% 99.38%      3.69s  0.98%  marketingPlatform/ak/journal.jrnLogger.WriteJRNFormat
+         0     0% 99.38%    373.33s 98.97%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getPopupContent
+         0     0% 99.38%      6.48s  1.72%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getTemplateVariables
+         0     0% 99.38%    373.33s 98.97%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).popupContent
+         0     0% 99.38%    373.34s 98.97%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.syncReq.func2
+         0     0% 99.38%    366.85s 97.25%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).RestoreAcidProccesing
+         0     0% 99.38%    105.27s 27.91%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).getAcidByClientFPrint
+         0     0% 99.38%     10.50s  2.78%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).getAcidByServerFPrint
+         0     0% 99.38%     93.79s 24.86%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).getAcidFromCache
+         0     0% 99.38%      6.36s  1.69%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).getAcidFromCacheByServerFP
+         0     0% 99.38%    243.47s 64.55%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).overwriteAcid
+         0     0% 99.38%    243.47s 64.55%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).setAcidToCache
+         0     0% 99.38%    377.03s   100%  marketingPlatform/ak/tools/ginlogger.middleware.func1
+         0     0% 99.38%    371.65s 98.53%  net/http.(*conn).serve
+         0     0% 99.38%       372s 98.62%  net/http.serverHandler.ServeHTTP

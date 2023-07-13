@@ -1,0 +1,78 @@
+File: trkwebctrl
+Build ID: eb53bae02d1c0cebf181d6aa585422bdebdd5c7b
+Type: cpu
+Time: Jul 11, 2023 at 1:26pm (MSK)
+Duration: 400s, Total samples = 1161.49s (290.37%)
+Showing nodes accounting for 1085.26s, 93.44% of 1161.49s total
+Dropped 1066 nodes (cum <= 5.81s)
+      flat  flat%   sum%        cum   cum%
+   433.59s 37.33% 37.33%    514.74s 44.32%  compress/flate.(*compressor).findMatch
+   346.04s 29.79% 67.12%   1061.69s 91.41%  compress/flate.(*compressor).deflate
+    79.37s  6.83% 73.96%     79.58s  6.85%  compress/flate.matchLen (inline)
+    53.33s  4.59% 78.55%    111.90s  9.63%  compress/flate.(*huffmanBitWriter).writeTokens
+    30.69s  2.64% 81.19%     36.40s  3.13%  compress/flate.(*huffmanBitWriter).writeCode
+    23.68s  2.04% 83.23%     23.86s  2.05%  compress/flate.hash4 (inline)
+    22.34s  1.92% 85.15%     58.39s  5.03%  compress/flate.(*huffmanBitWriter).indexTokens
+    21.38s  1.84% 86.99%     21.38s  1.84%  runtime.memclrNoHeapPointers
+    14.63s  1.26% 88.25%     14.63s  1.26%  runtime/internal/syscall.Syscall6
+    12.22s  1.05% 89.31%     15.32s  1.32%  compress/flate.(*huffmanEncoder).bitCounts
+    11.91s  1.03% 90.33%     11.91s  1.03%  runtime.memmove
+     9.99s  0.86% 91.19%     11.91s  1.03%  compress/flate.(*huffmanBitWriter).writeBits
+     9.57s  0.82% 92.01%      9.57s  0.82%  hash/crc32.ieeeCLMUL
+     9.18s  0.79% 92.80%      9.22s  0.79%  compress/flate.offsetCode (inline)
+     1.47s  0.13% 92.93%      6.83s  0.59%  runtime.gentraceback
+     1.39s  0.12% 93.05%     33.08s  2.85%  runtime.mallocgc
+     0.76s 0.065% 93.12%     27.59s  2.38%  compress/flate.(*huffmanEncoder).generate
+     0.59s 0.051% 93.17%     10.18s  0.88%  sort.pdqsort
+     0.37s 0.032% 93.20%      7.48s  0.64%  compress/flate.(*huffmanBitWriter).write (inline)
+     0.36s 0.031% 93.23%     10.54s  0.91%  sort.Sort
+     0.28s 0.024% 93.25%     21.89s  1.88%  runtime.newobject
+     0.21s 0.018% 93.27%     13.56s  1.17%  bytes.(*Buffer).Write
+     0.19s 0.016% 93.29%    175.17s 15.08%  compress/flate.(*huffmanBitWriter).writeBlock
+     0.14s 0.012% 93.30%     16.79s  1.45%  runtime.systemstack
+     0.12s  0.01% 93.31%   1137.56s 97.94%  marketingPlatform/ak/tools/ginlogger.middleware.func1
+     0.10s 0.0086% 93.32%   1143.59s 98.46%  net/http.(*conn).serve
+     0.09s 0.0077% 93.33%     10.33s  0.89%  bytes.growSlice
+     0.08s 0.0069% 93.33%   1137.58s 97.94%  github.com/gin-gonic/gin.(*Context).Next (inline)
+     0.08s 0.0069% 93.34%         7s   0.6%  text/template.(*state).walk
+     0.07s 0.006% 93.35%    175.24s 15.09%  compress/flate.(*compressor).writeBlock
+     0.07s 0.006% 93.35%   1137.96s 97.97%  net/http.serverHandler.ServeHTTP
+     0.06s 0.0052% 93.36%   1117.27s 96.19%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).renderedTagManagerScript
+     0.06s 0.0052% 93.36%     11.79s  1.02%  net.(*conn).Write
+     0.05s 0.0043% 93.37%     10.44s   0.9%  bytes.(*Buffer).grow
+     0.05s 0.0043% 93.37%    820.44s 70.64%  compress/flate.(*compressor).write
+     0.05s 0.0043% 93.38%     11.72s  1.01%  net.(*netFD).Write
+     0.05s 0.0043% 93.38%     14.68s  1.26%  syscall.RawSyscall6
+     0.05s 0.0043% 93.39%     15.19s  1.31%  syscall.Syscall
+     0.05s 0.0043% 93.39%     13.46s  1.16%  syscall.write
+     0.04s 0.0034% 93.39%     10.64s  0.92%  bufio.(*Writer).Write
+     0.04s 0.0034% 93.40%    853.86s 73.51%  compress/gzip.(*Writer).Write
+     0.04s 0.0034% 93.40%     13.76s  1.18%  internal/poll.(*FD).Write
+     0.04s 0.0034% 93.40%   1130.14s 97.30%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.getFile.func2
+     0.04s 0.0034% 93.41%   1099.59s 94.67%  marketingPlatform/ak/tools.GzipWrite
+     0.04s 0.0034% 93.41%     10.59s  0.91%  net/http.(*chunkWriter).Write
+     0.03s 0.0026% 93.41%    245.59s 21.14%  compress/gzip.(*Writer).Close
+     0.03s 0.0026% 93.42%     10.68s  0.92%  net/http.(*response).write
+     0.03s 0.0026% 93.42%      9.27s   0.8%  net/http.checkConnErrorWriter.Write
+     0.03s 0.0026% 93.42%      5.96s  0.51%  runtime.callers.func1
+     0.03s 0.0026% 93.42%      7.06s  0.61%  text/template.(*Template).execute
+     0.02s 0.0017% 93.42%      9.65s  0.83%  hash/crc32.Update
+     0.02s 0.0017% 93.43%   1117.83s 96.24%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).GetFile
+     0.02s 0.0017% 93.43%   1130.09s 97.30%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).GetStaticFile
+     0.02s 0.0017% 93.43%   1117.77s 96.24%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).getFileData
+     0.02s 0.0017% 93.43%     10.70s  0.92%  net/http.(*response).Write
+     0.01s 0.00086% 93.43%    245.56s 21.14%  compress/flate.(*compressor).close
+     0.01s 0.00086% 93.43%   1137.69s 97.95%  github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+     0.01s 0.00086% 93.43%   1130.54s 97.34%  github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+     0.01s 0.00086% 93.44%     15.08s  1.30%  internal/poll.ignoringEINTRIO (inline)
+     0.01s 0.00086% 93.44%   1130.10s 97.30%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getWebLayerStaticFile
+     0.01s 0.00086% 93.44%      5.98s  0.51%  runtime.callers
+         0     0% 93.44%    245.56s 21.14%  compress/flate.(*Writer).Close (inline)
+         0     0% 93.44%    820.44s 70.64%  compress/flate.(*Writer).Write (inline)
+         0     0% 93.44%      6.40s  0.55%  compress/flate.(*byFreq).sort (inline)
+         0     0% 93.44%     23.67s  2.04%  compress/flate.NewWriter
+         0     0% 93.44%   1137.89s 97.97%  github.com/gin-gonic/gin.(*Engine).ServeHTTP
+         0     0% 93.44%     10.70s  0.92%  github.com/gin-gonic/gin.(*responseWriter).Write
+         0     0% 93.44%      9.63s  0.83%  hash/crc32.archUpdateIEEE
+         0     0% 93.44%     13.46s  1.16%  syscall.Write (inline)
+         0     0% 93.44%      7.06s  0.61%  text/template.(*Template).Execute (inline)

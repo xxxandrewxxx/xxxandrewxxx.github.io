@@ -1,0 +1,10 @@
+File: trkwebctrl
+Build ID: eb53bae02d1c0cebf181d6aa585422bdebdd5c7b
+Type: threadcreate
+Time: Jul 11, 2023 at 12:49pm (MSK)
+Showing nodes accounting for 1, 3.12% of 32 total
+      flat  flat%   sum%        cum   cum%
+         1  3.12%  3.12%          1  3.12%  runtime.allocm
+         0     0%  3.12%          1  3.12%  runtime.main
+         0     0%  3.12%          1  3.12%  runtime.newm
+         0     0%  3.12%          1  3.12%  runtime.startTemplateThread

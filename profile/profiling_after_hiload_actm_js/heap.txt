@@ -1,0 +1,47 @@
+File: trkwebctrl
+Build ID: eb53bae02d1c0cebf181d6aa585422bdebdd5c7b
+Type: inuse_space
+Time: Jul 11, 2023 at 1:33pm (MSK)
+Showing nodes accounting for 774.89MB, 96.70% of 801.33MB total
+Dropped 127 nodes (cum <= 4.01MB)
+      flat  flat%   sum%        cum   cum%
+  260.78MB 32.54% 32.54%   260.78MB 32.54%  github.com/allegro/bigcache/v3/queue.NewBytesQueue (inline)
+  255.59MB 31.89% 64.44%   516.36MB 64.44%  github.com/allegro/bigcache/v3.initNewShard
+  159.15MB 19.86% 84.30%   159.15MB 19.86%  github.com/segmentio/encoding/json.decoder.decodeBytes
+   88.55MB 11.05% 95.35%    88.55MB 11.05%  github.com/smallnest/rpcx/protocol.(*Message).Decode
+    6.32MB  0.79% 96.14%     6.32MB  0.79%  marketingPlatform/ak/rmq/publisher.NewSession
+    4.50MB  0.56% 96.70%     4.50MB  0.56%  runtime.allocm
+         0     0% 96.70%   516.36MB 64.44%  github.com/allegro/bigcache/v3.New (inline)
+         0     0% 96.70%   516.36MB 64.44%  github.com/allegro/bigcache/v3.newBigCache
+         0     0% 96.70%   159.65MB 19.92%  github.com/segmentio/encoding/json.Parse
+         0     0% 96.70%   159.65MB 19.92%  github.com/segmentio/encoding/json.Unmarshal
+         0     0% 96.70%   159.15MB 19.86%  github.com/segmentio/encoding/json.constructMapDecodeFunc.func1
+         0     0% 96.70%   159.15MB 19.86%  github.com/segmentio/encoding/json.constructStructDecodeFunc.func1
+         0     0% 96.70%   159.15MB 19.86%  github.com/segmentio/encoding/json.decoder.decodeMap
+         0     0% 96.70%   159.15MB 19.86%  github.com/segmentio/encoding/json.decoder.decodeStruct
+         0     0% 96.70%   248.20MB 30.97%  github.com/smallnest/rpcx/client.(*Client).input
+         0     0% 96.70%     4.52MB  0.56%  github.com/syndtr/goleveldb/leveldb.(*DB).recoverJournal
+         0     0% 96.70%     4.52MB  0.56%  github.com/syndtr/goleveldb/leveldb.Open
+         0     0% 96.70%     4.52MB  0.56%  github.com/syndtr/goleveldb/leveldb.OpenFile
+         0     0% 96.70%     4.52MB  0.56%  github.com/syndtr/goleveldb/leveldb.openDB
+         0     0% 96.70%     4.52MB  0.56%  lab.altkraft.com/altkraft/ledisdb/ledis.Open
+         0     0% 96.70%     4.52MB  0.56%  lab.altkraft.com/altkraft/ledisdb/store.Open
+         0     0% 96.70%     4.52MB  0.56%  lab.altkraft.com/altkraft/ledisdb/store/goleveldb.Store.Open
+         0     0% 96.70%   531.21MB 66.29%  main.main
+         0     0% 96.70%   516.36MB 64.44%  marketingPlatform/ak/control/filecache.NewFileCache
+         0     0% 96.70%   531.21MB 66.29%  marketingPlatform/ak/daemonize.(*Daemonizer).Daemonize
+         0     0% 96.70%     4.52MB  0.56%  marketingPlatform/ak/drivers/ledisdb.(*Ledis).Run
+         0     0% 96.70%   159.65MB 19.92%  marketingPlatform/ak/proc/procrpc/rpccodecs.(*SegmentioCodec).Decode
+         0     0% 96.70%     8.32MB  1.04%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).Init
+         0     0% 96.70%   522.88MB 65.25%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).Run
+         0     0% 96.70%   516.36MB 64.44%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/enrichment_service.NewEnrichmentService
+         0     0% 96.70%     4.52MB  0.56%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.NewMatchingService
+         0     0% 96.70%     6.32MB  0.79%  marketingPlatform/ak/rmq/publisher.NewPublisher (inline)
+         0     0% 96.70%     6.32MB  0.79%  marketingPlatform/ak/rmq/publisher.configurePublisher
+         0     0% 96.70%    10.69MB  1.33%  runtime.doInit
+         0     0% 96.70%   541.90MB 67.62%  runtime.main
+         0     0% 96.70%     4.50MB  0.56%  runtime.newm
+         0     0% 96.70%     4.50MB  0.56%  runtime.resetspinning
+         0     0% 96.70%     4.50MB  0.56%  runtime.schedule
+         0     0% 96.70%     4.50MB  0.56%  runtime.startm
+         0     0% 96.70%     4.50MB  0.56%  runtime.wakep

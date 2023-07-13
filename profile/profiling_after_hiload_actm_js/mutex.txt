@@ -1,0 +1,35 @@
+File: trkwebctrl
+Build ID: eb53bae02d1c0cebf181d6aa585422bdebdd5c7b
+Type: delay
+Time: Jul 11, 2023 at 1:33pm (MSK)
+Showing nodes accounting for 35527.16ms, 100% of 35527.16ms total
+Dropped 24 nodes (cum <= 177.64ms)
+      flat  flat%   sum%        cum   cum%
+35527.16ms   100%   100% 35527.16ms   100%  sync.(*Mutex).Unlock (partial-inline)
+         0     0%   100% 35038.90ms 98.63%  github.com/gin-gonic/gin.(*Context).Next (inline)
+         0     0%   100% 35039.15ms 98.63%  github.com/gin-gonic/gin.(*Engine).ServeHTTP
+         0     0%   100% 35038.90ms 98.63%  github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+         0     0%   100%  5142.91ms 14.48%  github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+         0     0%   100%  5133.05ms 14.45%  github.com/smallnest/rpcx/client.(*xClient).Call
+         0     0%   100%  2481.60ms  6.99%  github.com/smallnest/rpcx/client.(*xClient).getCachedClient
+         0     0%   100%  5133.05ms 14.45%  github.com/smallnest/rpcx/client.(*xClient).selectClient
+         0     0%   100%   590.02ms  1.66%  io.(*multiWriter).Write
+         0     0%   100% 23467.80ms 66.06%  log.(*Logger).Output
+         0     0%   100%  6428.18ms 18.09%  log.(*Logger).Writer
+         0     0%   100%   590.02ms  1.66%  marketingPlatform/ak/daemonlogger.(*LogFile).Write
+         0     0%   100% 29895.98ms 84.15%  marketingPlatform/ak/journal.jrnLogger.WriteJRNFormat
+         0     0%   100%  5133.05ms 14.45%  marketingPlatform/ak/proc/procrpc/rpccli.(*RPCClient).Call
+         0     0%   100%  5142.91ms 14.48%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getWebLayerStaticFile
+         0     0%   100%  5142.91ms 14.48%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.getFile.func2
+         0     0%   100%  5142.91ms 14.48%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).GetFile
+         0     0%   100%  5142.91ms 14.48%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).GetStaticFile
+         0     0%   100%  5133.05ms 14.45%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).getContainerComponents
+         0     0%   100%  5142.91ms 14.48%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).getFileData
+         0     0%   100%  5142.91ms 14.48%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).renderedTagManagerScript
+         0     0%   100% 35038.90ms 98.63%  marketingPlatform/ak/tools/ginlogger.middleware.func1
+         0     0%   100% 35505.66ms 99.94%  net/http.(*conn).serve
+         0     0%   100%   451.51ms  1.27%  net/http.(*connReader).abortPendingRead
+         0     0%   100%   451.51ms  1.27%  net/http.(*response).finishRequest
+         0     0%   100% 35039.15ms 98.63%  net/http.serverHandler.ServeHTTP
+         0     0%   100%   451.51ms  1.27%  sync.(*Cond).Wait
+         0     0%   100%  5127.05ms 14.43%  sync.(*RWMutex).Unlock

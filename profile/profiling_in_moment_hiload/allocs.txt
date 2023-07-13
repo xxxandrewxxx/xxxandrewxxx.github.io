@@ -1,0 +1,79 @@
+File: trkwebctrl
+Build ID: eb53bae02d1c0cebf181d6aa585422bdebdd5c7b
+Type: alloc_space
+Time: Jul 11, 2023 at 12:49pm (MSK)
+Showing nodes accounting for 477384.66MB, 97.77% of 488249.39MB total
+Dropped 456 nodes (cum <= 2441.25MB)
+      flat  flat%   sum%        cum   cum%
+473252.77MB 96.93% 96.93% 473252.77MB 96.93%  github.com/syndtr/goleveldb/leveldb/util.(*BufferPool).Get
+ 1970.21MB   0.4% 97.33%  4443.95MB  0.91%  encoding/json.Marshal
+ 1745.11MB  0.36% 97.69% 477720.11MB 97.84%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getPopupContent
+  224.51MB 0.046% 97.74% 395842.76MB 81.07%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).readBlock
+   46.53MB 0.0095% 97.74% 110486.15MB 22.63%  lab.altkraft.com/altkraft/ledisdb/ledis.(*DB).HGetAll
+   23.51MB 0.0048% 97.75% 107593.88MB 22.04%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).getAcidFromCache
+   21.51MB 0.0044% 97.75% 477845.14MB 97.87%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).popupContent
+   20.51MB 0.0042% 97.76% 257034.50MB 52.64%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).setAcidToCache
+   19.50MB 0.004% 97.76% 77654.02MB 15.90%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).readFilterBlock
+   17.50MB 0.0036% 97.77% 363158.02MB 74.38%  github.com/syndtr/goleveldb/leveldb/cache.(*Cache).Get
+       9MB 0.0018% 97.77% 482241.17MB 98.77%  marketingPlatform/ak/tools/ginlogger.middleware.func1
+    6.50MB 0.0013% 97.77% 109661.01MB 22.46%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).NewIterator
+       6MB 0.0012% 97.77% 110439.56MB 22.62%  lab.altkraft.com/altkraft/ledisdb/store.(*DB).RangeLimitIterator
+       6MB 0.0012% 97.77% 363597.71MB 74.47%  github.com/syndtr/goleveldb/leveldb.(*DB).get
+       4MB 0.00082% 97.77% 363479.15MB 74.45%  github.com/syndtr/goleveldb/leveldb.(*version).get.func1
+       3MB 0.00061% 97.77% 108346.87MB 22.19%  lab.altkraft.com/altkraft/ledisdb/store.rangeLimitIterator
+       3MB 0.00061% 97.77% 110494.65MB 22.63%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).getAcidFromCacheByServerFP
+    1.50MB 0.00031% 97.77% 475930.49MB 97.48%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).RestoreAcidProccesing
+    1.50MB 0.00031% 97.77% 107945.11MB 22.11%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).getAcidByClientFPrint
+       1MB 0.0002% 97.77%  4482.53MB  0.92%  github.com/gin-gonic/gin.(*Context).JSON (inline)
+       1MB 0.0002% 97.77% 110530.65MB 22.64%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).getAcidByServerFPrint
+    0.50MB 0.0001% 97.77% 11263.72MB  2.31%  net/http.(*conn).serve
+         0     0% 97.77%  2477.73MB  0.51%  encoding/json.(*encodeState).marshal
+         0     0% 97.77%  2477.73MB  0.51%  encoding/json.(*encodeState).reflectValue
+         0     0% 97.77%  2477.73MB  0.51%  encoding/json.marshalerEncoder
+         0     0% 97.77% 482438.19MB 98.81%  github.com/gin-gonic/gin.(*Context).Next (inline)
+         0     0% 97.77%  4482.53MB  0.92%  github.com/gin-gonic/gin.(*Context).Render
+         0     0% 97.77% 226149.57MB 46.32%  github.com/gin-gonic/gin.(*Engine).ServeHTTP
+         0     0% 97.77% 482238.67MB 98.77%  github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+         0     0% 97.77% 482354.18MB 98.79%  github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+         0     0% 97.77%  4482.53MB  0.92%  github.com/gin-gonic/gin/render.JSON.Render
+         0     0% 97.77%  4483.53MB  0.92%  github.com/gin-gonic/gin/render.WriteJSON
+         0     0% 97.77% 363607.21MB 74.47%  github.com/syndtr/goleveldb/leveldb.(*DB).Get
+         0     0% 97.77%  4642.29MB  0.95%  github.com/syndtr/goleveldb/leveldb.(*DB).compactionTransact
+         0     0% 97.77%  4625.60MB  0.95%  github.com/syndtr/goleveldb/leveldb.(*DB).tCompaction
+         0     0% 97.77%  4625.60MB  0.95%  github.com/syndtr/goleveldb/leveldb.(*DB).tableAutoCompaction
+         0     0% 97.77%  4625.60MB  0.95%  github.com/syndtr/goleveldb/leveldb.(*DB).tableCompaction
+         0     0% 97.77% 108343.87MB 22.19%  github.com/syndtr/goleveldb/leveldb.(*dbIter).Seek
+         0     0% 97.77% 107672.33MB 22.05%  github.com/syndtr/goleveldb/leveldb.(*tFilesArrayIndexer).Get
+         0     0% 97.77% 363475.15MB 74.44%  github.com/syndtr/goleveldb/leveldb.(*tOps).find
+         0     0% 97.77% 109662.51MB 22.46%  github.com/syndtr/goleveldb/leveldb.(*tOps).newIterator
+         0     0% 97.77%  4624.60MB  0.95%  github.com/syndtr/goleveldb/leveldb.(*tableCompactionBuilder).run
+         0     0% 97.77% 363479.15MB 74.45%  github.com/syndtr/goleveldb/leveldb.(*version).get
+         0     0% 97.77% 363479.65MB 74.45%  github.com/syndtr/goleveldb/leveldb.(*version).walkOverlapping
+         0     0% 97.77% 363151.02MB 74.38%  github.com/syndtr/goleveldb/leveldb/cache.(*NamespaceGetter).Get (inline)
+         0     0% 97.77% 107672.33MB 22.05%  github.com/syndtr/goleveldb/leveldb/iterator.(*arrayIteratorIndexer).Get
+         0     0% 97.77%     2562MB  0.52%  github.com/syndtr/goleveldb/leveldb/iterator.(*indexedIterator).Next
+         0     0% 97.77% 108294.83MB 22.18%  github.com/syndtr/goleveldb/leveldb/iterator.(*indexedIterator).Seek
+         0     0% 97.77% 109291.77MB 22.38%  github.com/syndtr/goleveldb/leveldb/iterator.(*indexedIterator).setData
+         0     0% 97.77%  2604.78MB  0.53%  github.com/syndtr/goleveldb/leveldb/iterator.(*mergedIterator).Next
+         0     0% 97.77% 108294.83MB 22.18%  github.com/syndtr/goleveldb/leveldb/iterator.(*mergedIterator).Seek
+         0     0% 97.77% 363469.65MB 74.44%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).Find (inline)
+         0     0% 97.77% 363469.65MB 74.44%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).find
+         0     0% 97.77% 77714.52MB 15.92%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).getFilterBlock
+         0     0% 97.77% 395004.89MB 80.90%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).getIndexBlock
+         0     0% 97.77% 395898.27MB 81.09%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).readBlockCached
+         0     0% 97.77% 285380.99MB 58.45%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).readBlockCached.func1
+         0     0% 97.77% 77714.52MB 15.92%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).readFilterBlockCached
+         0     0% 97.77% 77654.02MB 15.90%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).readFilterBlockCached.func1
+         0     0% 97.77% 473252.77MB 96.93%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).readRawBlock
+         0     0% 97.77% 107221.62MB 21.96%  lab.altkraft.com/altkraft/ledisdb/ledis.(*DB).HGet
+         0     0% 97.77% 256480.22MB 52.53%  lab.altkraft.com/altkraft/ledisdb/ledis.(*DB).HSet
+         0     0% 97.77% 101991.45MB 20.89%  lab.altkraft.com/altkraft/ledisdb/ledis.(*DB).hIncrSize
+         0     0% 97.77% 256344.95MB 52.50%  lab.altkraft.com/altkraft/ledisdb/ledis.(*DB).hSetItem
+         0     0% 97.77% 363607.21MB 74.47%  lab.altkraft.com/altkraft/ledisdb/store.(*DB).Get
+         0     0% 97.77% 108343.87MB 22.19%  lab.altkraft.com/altkraft/ledisdb/store.(*Iterator).Seek (inline)
+         0     0% 97.77% 108346.87MB 22.19%  lab.altkraft.com/altkraft/ledisdb/store.NewRangeLimitIterator (inline)
+         0     0% 97.77% 363607.21MB 74.47%  lab.altkraft.com/altkraft/ledisdb/store/goleveldb.(*DB).Get
+         0     0% 97.77% 108343.87MB 22.19%  lab.altkraft.com/altkraft/ledisdb/store/goleveldb.(*Iterator).Seek
+         0     0% 97.77% 482327.67MB 98.79%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.syncReq.func2
+         0     0% 97.77% 257382.21MB 52.72%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).overwriteAcid
+         0     0% 97.77% 11768.16MB  2.41%  net/http.serverHandler.ServeHTTP

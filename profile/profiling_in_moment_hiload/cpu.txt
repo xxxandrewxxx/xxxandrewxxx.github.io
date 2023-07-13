@@ -1,0 +1,196 @@
+File: trkwebctrl
+Build ID: eb53bae02d1c0cebf181d6aa585422bdebdd5c7b
+Type: cpu
+Time: Jul 11, 2023 at 12:45pm (MSK)
+Duration: 250.20s, Total samples = 1114.10s (445.28%)
+Showing nodes accounting for 974.50s, 87.47% of 1114.10s total
+Dropped 1490 nodes (cum <= 5.57s)
+      flat  flat%   sum%        cum   cum%
+   478.33s 42.93% 42.93%    478.33s 42.93%  runtime/internal/syscall.Syscall6
+   203.93s 18.30% 61.24%    203.93s 18.30%  hash/crc32.castagnoliSSE42Triple
+   145.90s 13.10% 74.33%    145.90s 13.10%  runtime.memclrNoHeapPointers
+    19.11s  1.72% 76.05%        28s  2.51%  encoding/json.compact
+    16.96s  1.52% 77.57%        32s  2.87%  runtime.scanobject
+    14.44s  1.30% 78.87%     14.44s  1.30%  runtime.memmove
+    10.47s  0.94% 79.81%     11.85s  1.06%  github.com/syndtr/goleveldb/leveldb/util.Hash
+     6.56s  0.59% 80.40%      6.69s   0.6%  encoding/json.stateInString
+     6.32s  0.57% 80.96%      7.50s  0.67%  github.com/json-iterator/go.writeStringSlowPathWithHTMLEscaped
+     6.22s  0.56% 81.52%     23.52s  2.11%  runtime.gentraceback
+     6.13s  0.55% 82.07%      6.13s  0.55%  cmpbody
+     5.73s  0.51% 82.59%      7.21s  0.65%  runtime.findObject
+     5.50s  0.49% 83.08%      6.41s  0.58%  runtime.heapBitsSetType
+     4.69s  0.42% 83.50%      5.86s  0.53%  runtime.step
+     4.35s  0.39% 83.89%     11.94s  1.07%  runtime.pcvalue
+     3.53s  0.32% 84.21%    183.65s 16.48%  runtime.mallocgc
+     2.58s  0.23% 84.44%     13.73s  1.23%  github.com/syndtr/goleveldb/leveldb/table.(*blockWriter).append
+     1.98s  0.18% 84.62%    210.09s 18.86%  hash/crc32.archUpdateCastagnoli
+     1.84s  0.17% 84.78%    131.24s 11.78%  github.com/syndtr/goleveldb/leveldb.(*tableCompactionBuilder).run
+     1.82s  0.16% 84.95%      8.27s  0.74%  github.com/syndtr/goleveldb/leveldb/table.(*blockIter).Next
+     1.65s  0.15% 85.09%      9.24s  0.83%  github.com/syndtr/goleveldb/leveldb.(*iComparer).Compare
+     0.98s 0.088% 85.18%      7.50s  0.67%  github.com/syndtr/goleveldb/leveldb.(*iComparer).uCompare (inline)
+     0.97s 0.087% 85.27%     11.66s  1.05%  runtime.newobject
+     0.92s 0.083% 85.35%      8.43s  0.76%  github.com/json-iterator/go.(*Stream).WriteStringWithHTMLEscaped
+     0.87s 0.078% 85.43%     41.04s  3.68%  github.com/syndtr/goleveldb/leveldb/iterator.(*mergedIterator).Next
+     0.83s 0.074% 85.50%     35.62s  3.20%  github.com/syndtr/goleveldb/leveldb/iterator.(*indexedIterator).Next
+     0.73s 0.066% 85.57%     78.30s  7.03%  github.com/syndtr/goleveldb/leveldb/table.(*Writer).Append
+     0.56s  0.05% 85.62%    414.77s 37.23%  github.com/syndtr/goleveldb/leveldb.(*iStorageReader).ReadAt
+     0.56s  0.05% 85.67%      9.11s  0.82%  runtime.growslice
+     0.54s 0.048% 85.72%    484.07s 43.45%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).find
+     0.54s 0.048% 85.77%    160.64s 14.42%  github.com/syndtr/goleveldb/leveldb/util.(*BufferPool).Get
+     0.52s 0.047% 85.81%     38.03s  3.41%  runtime.gcDrain
+     0.49s 0.044% 85.86%    784.41s 70.41%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).readRawBlock
+     0.49s 0.044% 85.90%     12.61s  1.13%  github.com/syndtr/goleveldb/leveldb/table.(*filterWriter).add (inline)
+     0.46s 0.041% 85.94%     79.90s  7.17%  github.com/syndtr/goleveldb/leveldb.(*tWriter).append
+     0.44s 0.039% 85.98%    413.72s 37.13%  os.(*File).pread (inline)
+     0.43s 0.039% 86.02%        15s  1.35%  github.com/json-iterator/go.(*structEncoder).Encode
+     0.42s 0.038% 86.06%     70.24s  6.30%  runtime.systemstack
+     0.41s 0.037% 86.10%     64.21s  5.76%  internal/poll.(*FD).Write
+     0.41s 0.037% 86.13%    478.74s 42.97%  syscall.RawSyscall6
+     0.40s 0.036% 86.17%      7.47s  0.67%  runtime.findRunnable
+     0.34s 0.031% 86.20%    481.81s 43.25%  github.com/syndtr/goleveldb/leveldb/cache.(*Cache).Get
+     0.34s 0.031% 86.23%     11.82s  1.06%  github.com/syndtr/goleveldb/leveldb/filter.(*bloomFilterGenerator).Add
+     0.34s 0.031% 86.26%    139.04s 12.48%  runtime.memclrNoHeapPointersChunked
+     0.31s 0.028% 86.29%    739.51s 66.38%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).readBlock
+     0.31s 0.028% 86.32%    745.36s 66.90%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).readBlockCached
+     0.31s 0.028% 86.34%    414.03s 37.16%  os.(*File).ReadAt
+     0.28s 0.025% 86.37%     46.55s  4.18%  github.com/syndtr/goleveldb/leveldb.(*iStorageWriter).Write
+     0.28s 0.025% 86.39%    210.46s 18.89%  hash/crc32.Update
+     0.28s 0.025% 86.42%    162.63s 14.60%  runtime.makeslice
+     0.27s 0.024% 86.44%     79.49s  7.13%  github.com/syndtr/goleveldb/leveldb.(*tableCompactionBuilder).appendKV
+     0.27s 0.024% 86.47%     30.07s  2.70%  github.com/syndtr/goleveldb/leveldb/table.(*indexIter).Get
+     0.27s 0.024% 86.49%      5.85s  0.53%  runtime.(*mcache).refill
+     0.26s 0.023% 86.52%      9.16s  0.82%  runtime.schedule
+     0.25s 0.022% 86.54%     16.67s  1.50%  github.com/json-iterator/go.(*sortKeysMapEncoder).Encode
+     0.25s 0.022% 86.56%     12.12s  1.09%  github.com/syndtr/goleveldb/leveldb.iFilterGenerator.Add
+     0.25s 0.022% 86.58%     46.50s  4.17%  github.com/syndtr/goleveldb/leveldb/table.(*Writer).writeBlock
+     0.25s 0.022% 86.61%     70.32s  6.31%  syscall.Syscall
+     0.25s 0.022% 86.63%     62.71s  5.63%  syscall.write
+     0.24s 0.022% 86.65%      6.52s  0.59%  bytes.Compare (inline)
+     0.24s 0.022% 86.67%      8.67s  0.78%  github.com/json-iterator/go.(*htmlEscapedStringEncoder).Encode
+     0.24s 0.022% 86.69%     56.01s  5.03%  os.(*File).Write
+     0.24s 0.022% 86.71%      8.04s  0.72%  sync.(*Mutex).lockSlow
+     0.23s 0.021% 86.73%    492.22s 44.18%  github.com/syndtr/goleveldb/leveldb.(*DB).get
+     0.23s 0.021% 86.76%    320.03s 28.73%  github.com/syndtr/goleveldb/leveldb/iterator.(*indexedIterator).setData
+     0.23s 0.021% 86.78%     10.40s  0.93%  io.(*multiWriter).Write
+     0.22s  0.02% 86.80%    915.82s 82.20%  github.com/gin-gonic/gin.(*Context).Next (inline)
+     0.21s 0.019% 86.81%     29.59s  2.66%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).getDataIterErr
+     0.20s 0.018% 86.83%    296.91s 26.65%  github.com/syndtr/goleveldb/leveldb/iterator.(*mergedIterator).Seek
+     0.19s 0.017% 86.85%    480.44s 43.12%  github.com/syndtr/goleveldb/leveldb/cache.(*NamespaceGetter).Get (inline)
+     0.19s 0.017% 86.87%    846.78s 76.01%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getPopupContent
+     0.18s 0.016% 86.88%    486.90s 43.70%  github.com/syndtr/goleveldb/leveldb.(*version).walkOverlapping
+     0.18s 0.016% 86.90%     18.61s  1.67%  log.(*Logger).Output
+     0.18s 0.016% 86.91%      6.31s  0.57%  runtime.(*mcache).nextFree
+     0.17s 0.015% 86.93%     55.73s  5.00%  os.(*File).write (inline)
+     0.16s 0.014% 86.94%     29.40s  2.64%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).getDataIter
+     0.16s 0.014% 86.96%     10.14s  0.91%  marketingPlatform/ak/daemonlogger.(*LogFile).Write
+     0.16s 0.014% 86.97%    925.18s 83.04%  net/http.(*conn).serve
+     0.15s 0.013% 86.99%    413.28s 37.10%  internal/poll.(*FD).Pread
+     0.15s 0.013% 87.00%    216.88s 19.47%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).overwriteAcid
+     0.15s 0.013% 87.01%      8.19s  0.74%  sync.(*Mutex).Lock (inline)
+     0.14s 0.013% 87.03%    485.33s 43.56%  github.com/syndtr/goleveldb/leveldb.(*tOps).find
+     0.13s 0.012% 87.04%      7.76s   0.7%  runtime.semacquire1
+     0.13s 0.012% 87.05%    412.69s 37.04%  syscall.Syscall6
+     0.13s 0.012% 87.06%    412.74s 37.05%  syscall.pread
+     0.12s 0.011% 87.07%     64.26s  5.77%  internal/poll.ignoringEINTRIO (inline)
+     0.12s 0.011% 87.08%    839.83s 75.38%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).RestoreAcidProccesing
+     0.12s 0.011% 87.09%      8.01s  0.72%  runtime.scanstack
+     0.11s 0.0099% 87.10%     46.41s  4.17%  encoding/json.marshalerEncoder
+     0.11s 0.0099% 87.11%     14.63s  1.31%  github.com/json-iterator/go.(*structFieldEncoder).Encode
+     0.11s 0.0099% 87.12%    915.73s 82.19%  marketingPlatform/ak/tools/ginlogger.middleware.func1
+     0.10s 0.009% 87.13%      5.67s  0.51%  github.com/syndtr/goleveldb/leveldb.(*DB).Write
+     0.10s 0.009% 87.14%     47.88s  4.30%  github.com/syndtr/goleveldb/leveldb/table.(*Writer).finishBlock
+     0.10s 0.009% 87.15%    304.20s 27.30%  lab.altkraft.com/altkraft/ledisdb/ledis.(*DB).HGetAll
+     0.10s 0.009% 87.16%      5.93s  0.53%  runtime.pcdatavalue
+     0.09s 0.0081% 87.17%    296.16s 26.58%  github.com/syndtr/goleveldb/leveldb/iterator.(*indexedIterator).Seek
+     0.09s 0.0081% 87.18%    290.81s 26.10%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).NewIterator
+     0.09s 0.0081% 87.18%    718.06s 64.45%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).getIndexBlock
+     0.08s 0.0072% 87.19%      6.64s   0.6%  bufio.(*Writer).Flush
+     0.08s 0.0072% 87.20%     15.20s  1.36%  github.com/json-iterator/go.(*dynamicEncoder).Encode
+     0.08s 0.0072% 87.20%     78.67s  7.06%  lab.altkraft.com/altkraft/ledisdb/ledis.(*DB).hIncrSize
+     0.08s 0.0072% 87.21%      5.62s   0.5%  runtime.funcspdelta
+     0.08s 0.0072% 87.22%      8.54s  0.77%  runtime.park_m
+     0.07s 0.0063% 87.23%    298.01s 26.75%  github.com/syndtr/goleveldb/leveldb.(*dbIter).Seek
+     0.07s 0.0063% 87.23%    485.55s 43.58%  github.com/syndtr/goleveldb/leveldb.(*version).get.func1
+     0.07s 0.0063% 87.24%    298.13s 26.76%  lab.altkraft.com/altkraft/ledisdb/store.rangeLimitIterator
+     0.07s 0.0063% 87.24%    304.76s 27.35%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).getAcidFromCacheByServerFP
+     0.07s 0.0063% 87.25%      7.39s  0.66%  runtime.(*mcache).allocLarge
+     0.07s 0.0063% 87.26%     16.32s  1.46%  runtime.callers
+     0.07s 0.0063% 87.26%     10.09s  0.91%  runtime.mcall
+     0.07s 0.0063% 87.27%      8.69s  0.78%  runtime.saveblockevent
+     0.07s 0.0063% 87.28%    412.81s 37.05%  syscall.Pread (inline)
+     0.06s 0.0054% 87.28%     47.34s  4.25%  encoding/json.(*encodeState).reflectValue
+     0.06s 0.0054% 87.29%    492.63s 44.22%  github.com/syndtr/goleveldb/leveldb.(*DB).Get
+     0.06s 0.0054% 87.29%     48.33s  4.34%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).readFilterBlock
+     0.06s 0.0054% 87.30%    210.44s 18.89%  github.com/syndtr/goleveldb/leveldb/util.CRC.Update (inline)
+     0.06s 0.0054% 87.30%    492.85s 44.24%  lab.altkraft.com/altkraft/ledisdb/store.(*DB).Get
+     0.06s 0.0054% 87.31%    492.70s 44.22%  lab.altkraft.com/altkraft/ledisdb/store/goleveldb.(*DB).Get
+     0.06s 0.0054% 87.31%    909.31s 81.62%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.syncReq.func2
+     0.06s 0.0054% 87.32%    309.98s 27.82%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).getAcidByServerFPrint
+     0.06s 0.0054% 87.32%      8.74s  0.78%  net.(*netFD).Write
+     0.06s 0.0054% 87.33%    916.29s 82.24%  net/http.serverHandler.ServeHTTP
+     0.06s 0.0054% 87.34%     10.04s   0.9%  runtime.markroot
+     0.05s 0.0045% 87.34%      9.02s  0.81%  bufio.(*Writer).Write
+     0.05s 0.0045% 87.34%       916s 82.22%  github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+     0.05s 0.0045% 87.35%     16.79s  1.51%  github.com/json-iterator/go.(*Stream).WriteVal
+     0.05s 0.0045% 87.35%      6.85s  0.61%  github.com/json-iterator/go.(*sliceEncoder).Encode
+     0.05s 0.0045% 87.36%      5.83s  0.52%  lab.altkraft.com/altkraft/ledisdb/ledis.(*Ledis).handleCommit
+     0.05s 0.0045% 87.36%    850.91s 76.38%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).popupContent
+     0.05s 0.0045% 87.37%    211.03s 18.94%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).setAcidToCache
+     0.05s 0.0045% 87.37%     16.19s  1.45%  runtime.callers.func1
+     0.05s 0.0045% 87.38%      7.54s  0.68%  runtime.profilealloc
+     0.04s 0.0036% 87.38%    916.23s 82.24%  github.com/gin-gonic/gin.(*Engine).ServeHTTP
+     0.04s 0.0036% 87.38%     16.72s  1.50%  github.com/json-iterator/go.(*onePtrEncoder).Encode
+     0.04s 0.0036% 87.39%    486.52s 43.67%  github.com/syndtr/goleveldb/leveldb.(*version).get
+     0.04s 0.0036% 87.39%     50.10s  4.50%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).getFilterBlock
+     0.04s 0.0036% 87.39%      5.78s  0.52%  lab.altkraft.com/altkraft/ledisdb/store.(*WriteBatch).Commit
+     0.04s 0.0036% 87.40%     12.17s  1.09%  log.(*Logger).Printf
+     0.04s 0.0036% 87.40%     18.25s  1.64%  marketingPlatform/ak/backendController.R.MarshalJSON
+     0.04s 0.0036% 87.40%    306.10s 27.48%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).getAcidByClientFPrint
+     0.04s 0.0036% 87.41%      8.78s  0.79%  net.(*conn).Write
+     0.04s 0.0036% 87.41%      7.50s  0.67%  runtime.blockevent
+     0.04s 0.0036% 87.41%      7.80s   0.7%  sync.runtime_SemacquireMutex
+     0.03s 0.0027% 87.42%     58.20s  5.22%  github.com/gin-gonic/gin.(*Context).Render
+     0.03s 0.0027% 87.42%     58.11s  5.22%  github.com/gin-gonic/gin/render.WriteJSON
+     0.03s 0.0027% 87.42%    289.72s 26.00%  github.com/syndtr/goleveldb/leveldb/iterator.(*arrayIteratorIndexer).Get
+     0.03s 0.0027% 87.43%    202.92s 18.21%  lab.altkraft.com/altkraft/ledisdb/ledis.(*DB).HSet
+     0.03s 0.0027% 87.43%      6.14s  0.55%  lab.altkraft.com/altkraft/ledisdb/ledis.(*DB).hExpireAt
+     0.03s 0.0027% 87.43%      5.70s  0.51%  lab.altkraft.com/altkraft/ledisdb/store/goleveldb.(*WriteBatch).Commit
+     0.03s 0.0027% 87.43%    298.58s 26.80%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).getAcidFromCache
+     0.03s 0.0027% 87.44%      9.07s  0.81%  net/http.(*response).write
+     0.03s 0.0027% 87.44%      8.80s  0.79%  net/http.checkConnErrorWriter.Write
+     0.03s 0.0027% 87.44%      7.39s  0.66%  runtime.mProf_Malloc
+     0.02s 0.0018% 87.44%     49.14s  4.41%  encoding/json.Marshal
+     0.02s 0.0018% 87.45%    909.77s 81.66%  github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+     0.02s 0.0018% 87.45%     16.69s  1.50%  github.com/json-iterator/go.(*OptionalEncoder).Encode
+     0.02s 0.0018% 87.45%     18.07s  1.62%  github.com/json-iterator/go.(*frozenConfig).Marshal
+     0.02s 0.0018% 87.45%    291.52s 26.17%  github.com/syndtr/goleveldb/leveldb.(*tOps).newIterator
+     0.02s 0.0018% 87.45%     11.87s  1.07%  github.com/syndtr/goleveldb/leveldb/filter.bloomHash (inline)
+     0.02s 0.0018% 87.45%     50.06s  4.49%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).readFilterBlockCached
+     0.02s 0.0018% 87.46%    210.46s 18.89%  github.com/syndtr/goleveldb/leveldb/util.NewCRC (inline)
+     0.02s 0.0018% 87.46%    294.94s 26.47%  lab.altkraft.com/altkraft/ledisdb/ledis.(*DB).HGet
+     0.02s 0.0018% 87.46%    197.53s 17.73%  lab.altkraft.com/altkraft/ledisdb/ledis.(*DB).hSetItem
+     0.02s 0.0018% 87.46%    301.95s 27.10%  lab.altkraft.com/altkraft/ledisdb/store.(*DB).RangeLimitIterator
+     0.02s 0.0018% 87.46%      8.77s  0.79%  runtime.markroot.func1
+     0.01s 0.0009% 87.46%      6.51s  0.58%  github.com/syndtr/goleveldb/leveldb/comparer.bytesComparer.Compare
+     0.01s 0.0009% 87.47%      6.18s  0.55%  lab.altkraft.com/altkraft/ledisdb/ledis.(*DB).HExpire
+     0.01s 0.0009% 87.47%      5.84s  0.52%  lab.altkraft.com/altkraft/ledisdb/ledis.(*batch).Commit
+     0.01s 0.0009% 87.47%    298.03s 26.75%  lab.altkraft.com/altkraft/ledisdb/store.(*Iterator).Seek (inline)
+     0.01s 0.0009% 87.47%    298.02s 26.75%  lab.altkraft.com/altkraft/ledisdb/store/goleveldb.(*Iterator).Seek
+     0.01s 0.0009% 87.47%      8.91s   0.8%  net/http.(*chunkWriter).Write
+     0.01s 0.0009% 87.47%     62.72s  5.63%  syscall.Write (inline)
+         0     0% 87.47%     47.36s  4.25%  encoding/json.(*encodeState).marshal
+         0     0% 87.47%     58.26s  5.23%  github.com/gin-gonic/gin.(*Context).JSON (inline)
+         0     0% 87.47%      9.88s  0.89%  github.com/gin-gonic/gin.(*responseWriter).Write
+         0     0% 87.47%     58.11s  5.22%  github.com/gin-gonic/gin/render.JSON.Render
+         0     0% 87.47%    132.13s 11.86%  github.com/syndtr/goleveldb/leveldb.(*DB).compactionTransact
+         0     0% 87.47%    131.34s 11.79%  github.com/syndtr/goleveldb/leveldb.(*DB).tCompaction
+         0     0% 87.47%    131.34s 11.79%  github.com/syndtr/goleveldb/leveldb.(*DB).tableAutoCompaction
+         0     0% 87.47%    131.34s 11.79%  github.com/syndtr/goleveldb/leveldb.(*DB).tableCompaction
+         0     0% 87.47%    289.69s 26.00%  github.com/syndtr/goleveldb/leveldb.(*tFilesArrayIndexer).Get
+         0     0% 87.47%    484.07s 43.45%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).Find (inline)
+         0     0% 87.47%    424.88s 38.14%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).readBlockCached.func1
+         0     0% 87.47%     48.33s  4.34%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).readFilterBlockCached.func1
+         0     0% 87.47%    298.13s 26.76%  lab.altkraft.com/altkraft/ledisdb/store.NewRangeLimitIterator (inline)
+         0     0% 87.47%      9.07s  0.81%  net/http.(*response).Write
+         0     0% 87.47%     38.74s  3.48%  runtime.gcBgMarkWorker
+         0     0% 87.47%     38.04s  3.41%  runtime.gcBgMarkWorker.func2

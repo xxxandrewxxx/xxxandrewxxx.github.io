@@ -1,0 +1,35 @@
+File: trkwebctrl
+Build ID: eb53bae02d1c0cebf181d6aa585422bdebdd5c7b
+Type: delay
+Time: Jul 11, 2023 at 12:49pm (MSK)
+Showing nodes accounting for 20.26hrs, 99.83% of 20.30hrs total
+Dropped 243 nodes (cum <= 0.10hrs)
+      flat  flat%   sum%        cum   cum%
+  18.71hrs 92.16% 92.16%   18.71hrs 92.16%  sync.(*Mutex).Lock (inline)
+   1.09hrs  5.36% 97.53%    1.09hrs  5.36%  runtime.selectgo
+   0.47hrs  2.30% 99.83%    0.47hrs  2.30%  runtime.chanrecv1
+         0     0% 99.83%   18.71hrs 92.17%  github.com/gin-gonic/gin.(*Context).Next (inline)
+         0     0% 99.83%   18.71hrs 92.17%  github.com/gin-gonic/gin.(*Engine).ServeHTTP
+         0     0% 99.83%   18.71hrs 92.17%  github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+         0     0% 99.83%   18.70hrs 92.13%  github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+         0     0% 99.83%    0.25hrs  1.23%  github.com/patrickmn/go-cache.(*janitor).Run
+         0     0% 99.83%    0.34hrs  1.68%  github.com/streadway/amqp.(*Connection).heartbeater
+         0     0% 99.83%    9.01hrs 44.39%  lab.altkraft.com/altkraft/ledisdb/ledis.(*DB).HExpire
+         0     0% 99.83%    9.48hrs 46.70%  lab.altkraft.com/altkraft/ledisdb/ledis.(*DB).HSet
+         0     0% 99.83%    9.01hrs 44.39%  lab.altkraft.com/altkraft/ledisdb/ledis.(*DB).hExpireAt
+         0     0% 99.83%   18.49hrs 91.08%  lab.altkraft.com/altkraft/ledisdb/ledis.(*batch).Lock (inline)
+         0     0% 99.83%   18.49hrs 91.08%  lab.altkraft.com/altkraft/ledisdb/ledis.(*dbBatchLocker).Lock
+         0     0% 99.83%    0.15hrs  0.73%  log.(*Logger).Output
+         0     0% 99.83%    0.12hrs  0.59%  log.(*Logger).Println
+         0     0% 99.83%   18.70hrs 92.13%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getPopupContent
+         0     0% 99.83%    0.11hrs  0.53%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getTemplateVariables
+         0     0% 99.83%   18.70hrs 92.13%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).popupContent
+         0     0% 99.83%   18.70hrs 92.13%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.syncReq.func2
+         0     0% 99.83%   18.59hrs 91.59%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).RestoreAcidProccesing
+         0     0% 99.83%   18.49hrs 91.10%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).overwriteAcid
+         0     0% 99.83%   18.49hrs 91.10%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).setAcidToCache
+         0     0% 99.83%    0.35hrs  1.71%  marketingPlatform/ak/profiler.(*baseProfiler).profiling
+         0     0% 99.83%    0.35hrs  1.71%  marketingPlatform/ak/profiler.(*baseProfiler).run.func1.1
+         0     0% 99.83%   18.71hrs 92.17%  marketingPlatform/ak/tools/ginlogger.middleware.func1
+         0     0% 99.83%   18.69hrs 92.07%  net/http.(*conn).serve
+         0     0% 99.83%   18.69hrs 92.07%  net/http.serverHandler.ServeHTTP

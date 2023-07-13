@@ -1,0 +1,46 @@
+File: trkwebctrl
+Build ID: eb53bae02d1c0cebf181d6aa585422bdebdd5c7b
+Type: alloc_space
+Time: Jul 11, 2023 at 1:33pm (MSK)
+Showing nodes accounting for 104708.08MB, 97.42% of 107486.59MB total
+Dropped 351 nodes (cum <= 537.43MB)
+      flat  flat%   sum%        cum   cum%
+63311.48MB 58.90% 58.90% 77045.80MB 71.68%  compress/flate.NewWriter
+27268.12MB 25.37% 84.27% 27268.12MB 25.37%  bytes.growSlice
+13381.05MB 12.45% 96.72% 13381.05MB 12.45%  compress/flate.(*compressor).initDeflate (inline)
+  635.90MB  0.59% 97.31%   635.90MB  0.59%  compress/flate.(*huffmanEncoder).generate
+   77.53MB 0.072% 97.38% 105426.92MB 98.08%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).renderedTagManagerScript
+      24MB 0.022% 97.41% 105786.05MB 98.42%  marketingPlatform/ak/tools/ginlogger.middleware.func1
+       6MB 0.0056% 97.41% 14775.60MB 13.75%  text/template.(*Template).execute
+    3.50MB 0.0033% 97.41% 27271.62MB 25.37%  bytes.(*Buffer).grow
+    0.50MB 0.00047% 97.42% 105578.51MB 98.22%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).GetStaticFile
+         0     0% 97.42% 27269.59MB 25.37%  bytes.(*Buffer).Write
+         0     0% 97.42%  6223.77MB  5.79%  compress/flate.(*Writer).Close (inline)
+         0     0% 97.42%  6908.61MB  6.43%  compress/flate.(*Writer).Write (inline)
+         0     0% 97.42%  6223.77MB  5.79%  compress/flate.(*compressor).close
+         0     0% 97.42% 13132.38MB 12.22%  compress/flate.(*compressor).deflate
+         0     0% 97.42% 13734.32MB 12.78%  compress/flate.(*compressor).init
+         0     0% 97.42%  6908.61MB  6.43%  compress/flate.(*compressor).write
+         0     0% 97.42% 13132.38MB 12.22%  compress/flate.(*compressor).writeBlock
+         0     0% 97.42% 12496.49MB 11.63%  compress/flate.(*huffmanBitWriter).write (inline)
+         0     0% 97.42%  3300.50MB  3.07%  compress/flate.(*huffmanBitWriter).writeBits
+         0     0% 97.42% 13132.38MB 12.22%  compress/flate.(*huffmanBitWriter).writeBlock
+         0     0% 97.42%  9195.99MB  8.56%  compress/flate.(*huffmanBitWriter).writeCode
+         0     0% 97.42% 12496.49MB 11.63%  compress/flate.(*huffmanBitWriter).writeTokens
+         0     0% 97.42%  6223.77MB  5.79%  compress/gzip.(*Writer).Close
+         0     0% 97.42% 83957.91MB 78.11%  compress/gzip.(*Writer).Write
+         0     0% 97.42% 105786.05MB 98.42%  github.com/gin-gonic/gin.(*Context).Next (inline)
+         0     0% 97.42% 105786.55MB 98.42%  github.com/gin-gonic/gin.(*Engine).ServeHTTP
+         0     0% 97.42% 105786.05MB 98.42%  github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+         0     0% 97.42% 105623.02MB 98.27%  github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+         0     0% 97.42%   964.30MB   0.9%  github.com/smallnest/rpcx/client.(*Client).input
+         0     0% 97.42% 105578.51MB 98.22%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getWebLayerStaticFile
+         0     0% 97.42% 105578.51MB 98.22%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.getFile.func2
+         0     0% 97.42% 105431.42MB 98.09%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).GetFile
+         0     0% 97.42% 105431.42MB 98.09%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).getFileData
+         0     0% 97.42% 90199.68MB 83.92%  marketingPlatform/ak/tools.GzipWrite
+         0     0% 97.42% 105930.58MB 98.55%  net/http.(*conn).serve
+         0     0% 97.42% 105786.55MB 98.42%  net/http.serverHandler.ServeHTTP
+         0     0% 97.42%   552.96MB  0.51%  runtime.main
+         0     0% 97.42% 14775.60MB 13.75%  text/template.(*Template).Execute (inline)
+         0     0% 97.42% 14769.60MB 13.74%  text/template.(*state).walk

@@ -1,0 +1,99 @@
+File: trkwebctrl
+Build ID: eb53bae02d1c0cebf181d6aa585422bdebdd5c7b
+Type: goroutine
+Time: Jul 11, 2023 at 12:49pm (MSK)
+Showing nodes accounting for 660, 98.65% of 669 total
+Dropped 85 nodes (cum <= 3)
+      flat  flat%   sum%        cum   cum%
+       651 97.31% 97.31%        651 97.31%  runtime.gopark
+         8  1.20% 98.51%          8  1.20%  syscall.Syscall6
+         1  0.15% 98.65%          4   0.6%  marketingPlatform/ak/profiler.(*baseProfiler).profiling.func3
+         0     0% 98.65%          6   0.9%  bufio.(*Reader).Read
+         0     0% 98.65%        299 44.69%  github.com/gin-gonic/gin.(*Context).Next (inline)
+         0     0% 98.65%        291 43.50%  github.com/gin-gonic/gin.(*Engine).ServeHTTP
+         0     0% 98.65%        292 43.65%  github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+         0     0% 98.65%        299 44.69%  github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+         0     0% 98.65%          7  1.05%  github.com/patrickmn/go-cache.(*janitor).Run
+         0     0% 98.65%          5  0.75%  github.com/streadway/amqp.(*Connection).heartbeater
+         0     0% 98.65%          5  0.75%  github.com/streadway/amqp.(*Connection).reader
+         0     0% 98.65%          5  0.75%  github.com/streadway/amqp.(*reader).ReadFrame
+         0     0% 98.65%          8  1.20%  github.com/syndtr/goleveldb/leveldb.(*DB).Get
+         0     0% 98.65%          8  1.20%  github.com/syndtr/goleveldb/leveldb.(*DB).get
+         0     0% 98.65%          3  0.45%  github.com/syndtr/goleveldb/leveldb.(*dbIter).Seek
+         0     0% 98.65%          8  1.20%  github.com/syndtr/goleveldb/leveldb.(*iStorageReader).ReadAt
+         0     0% 98.65%          8  1.20%  github.com/syndtr/goleveldb/leveldb.(*tOps).find
+         0     0% 98.65%          8  1.20%  github.com/syndtr/goleveldb/leveldb.(*version).get
+         0     0% 98.65%          8  1.20%  github.com/syndtr/goleveldb/leveldb.(*version).get.func1
+         0     0% 98.65%          8  1.20%  github.com/syndtr/goleveldb/leveldb.(*version).walkOverlapping
+         0     0% 98.65%          8  1.20%  github.com/syndtr/goleveldb/leveldb/cache.(*Cache).Get
+         0     0% 98.65%          8  1.20%  github.com/syndtr/goleveldb/leveldb/cache.(*NamespaceGetter).Get (inline)
+         0     0% 98.65%          3  0.45%  github.com/syndtr/goleveldb/leveldb/iterator.(*indexedIterator).Seek
+         0     0% 98.65%          3  0.45%  github.com/syndtr/goleveldb/leveldb/iterator.(*indexedIterator).setData
+         0     0% 98.65%          3  0.45%  github.com/syndtr/goleveldb/leveldb/iterator.(*mergedIterator).Seek
+         0     0% 98.65%          8  1.20%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).Find (inline)
+         0     0% 98.65%          8  1.20%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).find
+         0     0% 98.65%          9  1.35%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).getIndexBlock
+         0     0% 98.65%          9  1.35%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).readBlock
+         0     0% 98.65%         10  1.49%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).readBlockCached
+         0     0% 98.65%          6   0.9%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).readBlockCached.func1
+         0     0% 98.65%          8  1.20%  github.com/syndtr/goleveldb/leveldb/table.(*Reader).readRawBlock
+         0     0% 98.65%          8  1.20%  internal/poll.(*FD).Pread
+         0     0% 98.65%        306 45.74%  internal/poll.(*FD).Read
+         0     0% 98.65%        307 45.89%  internal/poll.(*pollDesc).wait
+         0     0% 98.65%        307 45.89%  internal/poll.(*pollDesc).waitRead (inline)
+         0     0% 98.65%        307 45.89%  internal/poll.runtime_pollWait
+         0     0% 98.65%          6   0.9%  io.ReadAtLeast
+         0     0% 98.65%          6   0.9%  io.ReadFull (inline)
+         0     0% 98.65%        210 31.39%  lab.altkraft.com/altkraft/ledisdb/ledis.(*DB).HExpire
+         0     0% 98.65%          7  1.05%  lab.altkraft.com/altkraft/ledisdb/ledis.(*DB).HGet
+         0     0% 98.65%          3  0.45%  lab.altkraft.com/altkraft/ledisdb/ledis.(*DB).HGetAll
+         0     0% 98.65%         77 11.51%  lab.altkraft.com/altkraft/ledisdb/ledis.(*DB).HSet
+         0     0% 98.65%        210 31.39%  lab.altkraft.com/altkraft/ledisdb/ledis.(*DB).hExpireAt
+         0     0% 98.65%        286 42.75%  lab.altkraft.com/altkraft/ledisdb/ledis.(*batch).Lock (inline)
+         0     0% 98.65%        286 42.75%  lab.altkraft.com/altkraft/ledisdb/ledis.(*dbBatchLocker).Lock
+         0     0% 98.65%          8  1.20%  lab.altkraft.com/altkraft/ledisdb/store.(*DB).Get
+         0     0% 98.65%          3  0.45%  lab.altkraft.com/altkraft/ledisdb/store.(*DB).RangeLimitIterator
+         0     0% 98.65%          3  0.45%  lab.altkraft.com/altkraft/ledisdb/store.(*Iterator).Seek (inline)
+         0     0% 98.65%          3  0.45%  lab.altkraft.com/altkraft/ledisdb/store.NewRangeLimitIterator (inline)
+         0     0% 98.65%          3  0.45%  lab.altkraft.com/altkraft/ledisdb/store.rangeLimitIterator
+         0     0% 98.65%          8  1.20%  lab.altkraft.com/altkraft/ledisdb/store/goleveldb.(*DB).Get
+         0     0% 98.65%          3  0.45%  lab.altkraft.com/altkraft/ledisdb/store/goleveldb.(*Iterator).Seek
+         0     0% 98.65%          3  0.45%  log.(*Logger).Output
+         0     0% 98.65%          3  0.45%  log.(*Logger).Printf
+         0     0% 98.65%        300 44.84%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getPopupContent
+         0     0% 98.65%        300 44.84%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).popupContent
+         0     0% 98.65%        300 44.84%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.syncReq.func2
+         0     0% 98.65%        300 44.84%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).RestoreAcidProccesing
+         0     0% 98.65%         10  1.49%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).getAcidByClientFPrint
+         0     0% 98.65%          3  0.45%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).getAcidByServerFPrint
+         0     0% 98.65%          7  1.05%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).getAcidFromCache
+         0     0% 98.65%          3  0.45%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).getAcidFromCacheByServerFP
+         0     0% 98.65%        287 42.90%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).overwriteAcid
+         0     0% 98.65%        287 42.90%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).setAcidToCache
+         0     0% 98.65%          7  1.05%  marketingPlatform/ak/profiler.(*baseProfiler).profiling
+         0     0% 98.65%          7  1.05%  marketingPlatform/ak/profiler.(*baseProfiler).run.func1.1
+         0     0% 98.65%          5  0.75%  marketingPlatform/ak/rmq/publisher.(*AmqPublisher).Run.func1
+         0     0% 98.65%          5  0.75%  marketingPlatform/ak/rmq/publisher.(*Publisher).run.func1
+         0     0% 98.65%          5  0.75%  marketingPlatform/ak/rmq/publisher.(*Publisher).runPublish.func1
+         0     0% 98.65%          5  0.75%  marketingPlatform/ak/rmq/publisher.(*Publisher).runPublish.func2
+         0     0% 98.65%        292 43.65%  marketingPlatform/ak/tools/ginlogger.middleware.func1
+         0     0% 98.65%        306 45.74%  net.(*conn).Read
+         0     0% 98.65%        306 45.74%  net.(*netFD).Read
+         0     0% 98.65%        289 43.20%  net/http.(*conn).serve
+         0     0% 98.65%        300 44.84%  net/http.(*connReader).backgroundRead
+         0     0% 98.65%        291 43.50%  net/http.serverHandler.ServeHTTP
+         0     0% 98.65%          8  1.20%  os.(*File).ReadAt
+         0     0% 98.65%          8  1.20%  os.(*File).pread (inline)
+         0     0% 98.65%         10  1.49%  runtime.chanrecv
+         0     0% 98.65%          6   0.9%  runtime.chanrecv1
+         0     0% 98.65%          4   0.6%  runtime.chanrecv2
+         0     0% 98.65%        290 43.35%  runtime.goparkunlock (inline)
+         0     0% 98.65%        307 45.89%  runtime.netpollblock
+         0     0% 98.65%         43  6.43%  runtime.selectgo
+         0     0% 98.65%        290 43.35%  runtime.semacquire1
+         0     0% 98.65%          3  0.45%  runtime/pprof.(*Profile).WriteTo
+         0     0% 98.65%        289 43.20%  sync.(*Mutex).Lock (inline)
+         0     0% 98.65%        289 43.20%  sync.(*Mutex).lockSlow
+         0     0% 98.65%        289 43.20%  sync.runtime_SemacquireMutex
+         0     0% 98.65%          8  1.20%  syscall.Pread (inline)
+         0     0% 98.65%          8  1.20%  syscall.pread

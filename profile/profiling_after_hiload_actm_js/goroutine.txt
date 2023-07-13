@@ -1,0 +1,77 @@
+File: trkwebctrl
+Build ID: eb53bae02d1c0cebf181d6aa585422bdebdd5c7b
+Type: goroutine
+Time: Jul 11, 2023 at 1:33pm (MSK)
+Showing nodes accounting for 68, 100% of 68 total
+      flat  flat%   sum%        cum   cum%
+        65 95.59% 95.59%         65 95.59%  runtime.gopark
+         2  2.94% 98.53%          2  2.94%  runtime.notetsleepg
+         1  1.47%   100%          1  1.47%  runtime.goroutineProfileWithLabels
+         0     0%   100%          6  8.82%  bufio.(*Reader).Read
+         0     0%   100%          1  1.47%  github.com/ClickHouse/clickhouse-go.init.0.func1
+         0     0%   100%          1  1.47%  github.com/allegro/bigcache/v3.newBigCache.func1
+         0     0%   100%          1  1.47%  github.com/leprosus/golang-ttl-map.(*Heap).handle
+         0     0%   100%          7 10.29%  github.com/patrickmn/go-cache.(*janitor).Run
+         0     0%   100%          1  1.47%  github.com/segmentio/agecache.New.func1
+         0     0%   100%          1  1.47%  github.com/sevlyar/go-daemon.ServeSignals
+         0     0%   100%          1  1.47%  github.com/smallnest/rpcx/client.(*Client).input
+         0     0%   100%          1  1.47%  github.com/smallnest/rpcx/client.(*xClient).watch
+         0     0%   100%          1  1.47%  github.com/smallnest/rpcx/protocol.(*Message).Decode
+         0     0%   100%          5  7.35%  github.com/streadway/amqp.(*Connection).heartbeater
+         0     0%   100%          5  7.35%  github.com/streadway/amqp.(*Connection).reader
+         0     0%   100%          5  7.35%  github.com/streadway/amqp.(*reader).ReadFrame
+         0     0%   100%          1  1.47%  github.com/syndtr/goleveldb/leveldb.(*DB).compactionError
+         0     0%   100%          1  1.47%  github.com/syndtr/goleveldb/leveldb.(*DB).mCompaction
+         0     0%   100%          1  1.47%  github.com/syndtr/goleveldb/leveldb.(*DB).mpoolDrain
+         0     0%   100%          1  1.47%  github.com/syndtr/goleveldb/leveldb.(*DB).tCompaction
+         0     0%   100%          1  1.47%  github.com/syndtr/goleveldb/leveldb/util.(*BufferPool).drain
+         0     0%   100%          1  1.47%  go.opencensus.io/stats/view.(*worker).start
+         0     0%   100%          1  1.47%  internal/poll.(*FD).Accept
+         0     0%   100%          6  8.82%  internal/poll.(*FD).Read
+         0     0%   100%          7 10.29%  internal/poll.(*pollDesc).wait
+         0     0%   100%          7 10.29%  internal/poll.(*pollDesc).waitRead (inline)
+         0     0%   100%          7 10.29%  internal/poll.runtime_pollWait
+         0     0%   100%          6  8.82%  io.ReadAtLeast
+         0     0%   100%          6  8.82%  io.ReadFull (inline)
+         0     0%   100%          1  1.47%  lab.altkraft.com/altkraft/ledisdb/ledis.(*Ledis).checkTTL.func1
+         0     0%   100%          1  1.47%  main.main
+         0     0%   100%          1  1.47%  marketingPlatform/ak/daemonize.(*Daemonizer).Daemonize
+         0     0%   100%          1  1.47%  marketingPlatform/ak/daemonlogger.(*LogFile).watchFileSize
+         0     0%   100%          1  1.47%  marketingPlatform/ak/drivers/ttl.(*WebDeduplicationDB).cleanUp
+         0     0%   100%          1  1.47%  marketingPlatform/ak/proc/tracking/funcs.(*MemTTLCache).updateCacheState
+         0     0%   100%          7 10.29%  marketingPlatform/ak/profiler.(*baseProfiler).profiling
+         0     0%   100%          1  1.47%  marketingPlatform/ak/profiler.(*baseProfiler).profiling.func3
+         0     0%   100%          1  1.47%  marketingPlatform/ak/profiler.(*baseProfiler).run.func1
+         0     0%   100%          7 10.29%  marketingPlatform/ak/profiler.(*baseProfiler).run.func1.1
+         0     0%   100%          5  7.35%  marketingPlatform/ak/rmq/publisher.(*AmqPublisher).Run.func1
+         0     0%   100%          5  7.35%  marketingPlatform/ak/rmq/publisher.(*Publisher).run.func1
+         0     0%   100%          5  7.35%  marketingPlatform/ak/rmq/publisher.(*Publisher).runPublish.func1
+         0     0%   100%          5  7.35%  marketingPlatform/ak/rmq/publisher.(*Publisher).runPublish.func2
+         0     0%   100%          1  1.47%  marketingPlatform/ak/service_server.(*ServiceServer).Run
+         0     0%   100%          1  1.47%  marketingPlatform/ak/service_server.(*ServiceServer).Run.func1
+         0     0%   100%          2  2.94%  marketingPlatform/ak/tools.ScheduleFuncWGContext.func1
+         0     0%   100%          1  1.47%  net.(*TCPListener).Accept
+         0     0%   100%          1  1.47%  net.(*TCPListener).accept
+         0     0%   100%          6  8.82%  net.(*conn).Read
+         0     0%   100%          6  8.82%  net.(*netFD).Read
+         0     0%   100%          1  1.47%  net.(*netFD).accept
+         0     0%   100%          1  1.47%  net/http.(*Server).Serve
+         0     0%   100%          1  1.47%  os/signal.loop
+         0     0%   100%          1  1.47%  os/signal.signal_recv
+         0     0%   100%          1  1.47%  runtime.(*profBuf).read
+         0     0%   100%         13 19.12%  runtime.chanrecv
+         0     0%   100%          9 13.24%  runtime.chanrecv1
+         0     0%   100%          4  5.88%  runtime.chanrecv2
+         0     0%   100%          1  1.47%  runtime.goparkunlock (inline)
+         0     0%   100%          1  1.47%  runtime.main
+         0     0%   100%          7 10.29%  runtime.netpollblock
+         0     0%   100%         44 64.71%  runtime.selectgo
+         0     0%   100%          1  1.47%  runtime.semacquire1
+         0     0%   100%          1  1.47%  runtime/pprof.(*Profile).WriteTo
+         0     0%   100%          1  1.47%  runtime/pprof.profileWriter
+         0     0%   100%          1  1.47%  runtime/pprof.readProfile
+         0     0%   100%          1  1.47%  runtime/pprof.runtime_goroutineProfileWithLabels
+         0     0%   100%          1  1.47%  runtime/pprof.writeGoroutine
+         0     0%   100%          1  1.47%  runtime/pprof.writeRuntimeProfile
+         0     0%   100%          1  1.47%  sync.(*WaitGroup).Wait
+         0     0%   100%          1  1.47%  sync.runtime_Semacquire

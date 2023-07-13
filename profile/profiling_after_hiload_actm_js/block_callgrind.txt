@@ -1,0 +1,1216 @@
+positions: instr line
+events: delay(us)
+
+ob=(1) /opt/MarketingPlatform/ak/bin/trkwebctrl
+fl=(1) /usr/local/go/src/runtime/select.go
+fn=(1) runtime.selectgo
+0x4639c4 509 9002041691
+
+ob=(1)
+fl=(2) /usr/local/go/src/runtime/chan.go
+fn=(2) runtime.chanrecv1
+-278829 442 3558706803
+
+ob=(1)
+fl=(3) /usr/local/go/src/sync/cond.go
+fn=(3) sync.(*Cond).Wait
++507604 70 553941111
+
+ob=(1)
+fl=(4) /usr/local/go/src/sync/mutex.go
+fn=(4) sync.(*Mutex).Lock
++556709 90 451479564
+
+ob=(1)
+fl=(2)
+fn=(5) runtime.chanrecv2
+0x41f8d7 447 359977832
+
+ob=(1)
+fl=(5) /usr/local/go/src/internal/poll/fd_mutex.go
+fn=(6) internal/poll.(*fdMutex).rwlock
++858074 154 185281646
+
+ob=(1)
+fl=(4)
+fn=(4)
+-337500 90 115957847
++539750 90 38712880
++250 90 24742196
+-543255 90 431909
+0xc3a6fc 90 243117
+0xb2e7fb 90 217651
+0x875384 90 179702
+0xc3e03e 90 81329
+-4167 90 59427
+0x49bd64 90 141
+-813 90 29
+0xc3a83c 90 26
+
+ob=(1)
+fl=(6) /usr/local/go/src/sync/map.go
+fn=(7) sync.(*Map).Load
+0x49ba37 114 0
+cfl=(4)
+cfn=(4)
+calls=0 0x49ba37 90
+* * 29
+
+ob=(1)
+fl=(6)
+fn=(8) sync.(*Map).Store
++813 150 0
+cfl=(4)
+cfn=(4)
+calls=0 +813 90
+* * 141
+
+ob=(1)
+fl=(7) /usr/local/go/src/sync/pool.go
+fn=(9) sync.(*Pool).Put
++7153 107 0
+cfl=(7)
+cfn=(10) sync.(*Pool).pin
+calls=0 +8073 209
+* * 91350
+
+ob=(1)
+fl=(7)
+fn=(11) sync.(*Pool).Get
++207 131 0
+cfl=(7)
+cfn=(10)
+calls=0 +920 209
+* * 340558
+
+ob=(1)
+fl=(7)
+fn=(10)
++713 209 0
+cfl=(7)
+cfn=(12) sync.(*Pool).pinSlow
+calls=0 +890 216
+* * 431909
+
+ob=(1)
+fl=(7)
+fn=(12)
++177 216 0
+cfl=(4)
+cfn=(4)
+calls=0 +177 90
+* * 431909
+
+ob=(1)
+fl=(8) /usr/local/go/src/sync/rwmutex.go
+fn=(13) sync.(*RWMutex).Lock
++3255 147 0
+cfl=(4)
+cfn=(4)
+calls=0 +3255 90
+* * 115957847
+
+ob=(1)
+fl=(9) /usr/local/go/src/io/multi.go
+fn=(14) io.(*multiWriter).Write
++185296 85 0
+cfl=(10) /var/lib/jenkins/workspace/testing-update-build/ak/src/ak/daemonlogger/log_file.go
+cfn=(15) marketingPlatform/ak/daemonlogger.(*LogFile).Write
+calls=0 0xb2e7fb 116
+* * 217651
+
+ob=(1)
+fl=(11) /usr/local/go/src/internal/poll/fd_unix.go
+fn=(16) internal/poll.(*FD).Write
++166092 370 0
+cfl=(5)
+cfn=(17) internal/poll.(*FD).writeLock
+calls=0 +166092 239
+* * 185281646
+
+ob=(1)
+fl=(5)
+fn=(17)
+* 239 0
+cfl=(5)
+cfn=(6)
+calls=0 -13888 154
+* * 185281646
+
+ob=(1)
+fl=(12) /usr/local/go/src/fmt/print.go
+fn=(18) fmt.newPrinter
++78483 137 0
+cfl=(7)
+cfn=(11)
+calls=0 -355533 131
+* * 2099
+
+ob=(1)
+fl=(12)
+fn=(19) fmt.Sprintf
++1457 218 0
+cfl=(12)
+cfn=(18)
+calls=0 * 137
+* * 2099
+
+ob=(1)
+fl=(13) /usr/local/go/src/log/log.go
+fn=(20) log.(*Logger).Output
++108422 179 0
+cfl=(4)
+cfn=(4)
+calls=0 +108422 90
+* * 38712880
++250 190 0
+cfl=(4)
+cfn=(4)
+calls=0 +250 90
+* * 24742196
++466 198 0
+cfl=(9)
+cfn=(14)
+calls=0 -354704 85
+* * 217651
+
+ob=(1)
+fl=(13)
+fn=(21) log.(*Logger).Writer
++3209 300 0
+cfl=(4)
+cfn=(4)
+calls=0 +3209 90
+* * 451479564
+
+ob=(1)
+fl=(14) /root/go/pkg/mod/github.com/modern-go/reflect2@v1.0.2/reflect2.go
+fn=(22) github.com/modern-go/reflect2.(*frozenConfig).TypeOf
++328226 146 0
+cfl=(6)
+cfn=(7)
+calls=0 -555993 114
+* * 29
+
+ob=(1)
+fl=(14)
+fn=(23) github.com/modern-go/reflect2.(*frozenConfig).Type2
++370 163 0
+cfl=(6)
+cfn=(8)
+calls=0 -883406 150
+* * 141
+
+ob=(1)
+fl=(14)
+fn=(24) github.com/modern-go/reflect2.PtrTo
++1747 227 0
+cfl=(14)
+cfn=(25) github.com/modern-go/reflect2.Type2
+calls=0 +1747 223
+* * 141
+
+ob=(1)
+fl=(14)
+fn=(25)
+* 223 0
+cfl=(14)
+cfn=(23)
+calls=0 -1747 163
+* * 141
+
+ob=(1)
+fl=(15) /usr/local/go/src/encoding/json/encode.go
+fn=(26) encoding/json.Marshal
++198735 158 0
+cfl=(15)
+cfn=(27) encoding/json.newEncodeState
+calls=0 +200717 304
+* * 1798
+
+ob=(1)
+fl=(15)
+fn=(27)
++1982 304 0
+cfl=(7)
+cfn=(11)
+calls=0 0x49da24 131
+* * 1798
+
+ob=(1)
+fl=(16) /root/go/pkg/mod/github.com/json-iterator/go@v1.1.12/config.go
+fn=(28) github.com/json-iterator/go.(*frozenConfig).Marshal
++285035 297 0
+cfl=(17) /root/go/pkg/mod/github.com/json-iterator/go@v1.1.12/pool.go
+cfn=(29) github.com/json-iterator/go.(*frozenConfig).BorrowStream
+calls=0 +320110 20
+* * 237489
++89 299 0
+cfl=(18) /root/go/pkg/mod/github.com/json-iterator/go@v1.1.12/reflect.go
+cfn=(30) github.com/json-iterator/go.(*Stream).WriteVal
+calls=0 +36694 98
+* * 1369
+cfl=(18)
+cfn=(30)
+calls=0 +36669 96
+* * 141
+cfl=(18)
+cfn=(30)
+calls=0 +36647 95
+* * 29
+
+ob=(1)
+fl=(17)
+fn=(29)
++34986 20 0
+cfl=(7)
+cfn=(11)
+calls=0 0x49da24 131
+* * 237489
+
+ob=(1)
+fl=(17)
+fn=(31) github.com/json-iterator/go.(*frozenConfig).BorrowIterator
++416 33 0
+cfl=(7)
+cfn=(11)
+calls=0 0x49da24 131
+* * 1369
+
+ob=(1)
+fl=(18)
+fn=(30)
++1156 95 0
+cfl=(14)
+cfn=(32) github.com/modern-go/reflect2.TypeOf
+calls=0 +1156 212
+* * 29
+
+ob=(1)
+fl=(14)
+fn=(32)
+* 212 0
+cfl=(14)
+cfn=(22)
+calls=0 -524516 146
+* * 29
+
+ob=(1)
+fl=(18)
+fn=(30)
++22 96 0
+cfl=(18)
+cfn=(33) github.com/json-iterator/go.(*frozenConfig).EncoderOf
+calls=0 +2766 202
+* * 141
++25 98 0
+cfl=(18)
+cfn=(34) github.com/json-iterator/go.(*onePtrEncoder).Encode
+calls=0 +3317 219
+* * 1369
+
+ob=(1)
+fl=(18)
+fn=(33)
++2719 202 0
+cfl=(18)
+cfn=(35) github.com/json-iterator/go.encoderOfType
+calls=0 +3423 227
+* * 141
+
+ob=(1)
+fl=(18)
+fn=(34)
++573 219 0
+cfl=(19) /root/go/pkg/mod/github.com/json-iterator/go@v1.1.12/reflect_map.go
+cfn=(36) github.com/json-iterator/go.(*sortKeysMapEncoder).Encode
+calls=0 +33105 294
+* * 1369
+
+ob=(1)
+fl=(18)
+fn=(35)
++131 227 0
+cfl=(18)
+cfn=(37) github.com/json-iterator/go.createEncoderOfType
+calls=0 +701 245
+* * 141
+
+ob=(1)
+fl=(18)
+fn=(37)
++570 245 0
+cfl=(18)
+cfn=(38) github.com/json-iterator/go._createEncoderOfType
+calls=0 +960 258
+* * 141
+
+ob=(1)
+fl=(18)
+fn=(38)
++390 258 0
+cfl=(20) /root/go/pkg/mod/github.com/json-iterator/go@v1.1.12/reflect_marshaler.go
+cfn=(39) github.com/json-iterator/go.createEncoderOfMarshaler
+calls=0 +36395 47
+* * 141
+
+ob=(1)
+fl=(19)
+fn=(36)
++31441 294 0
+cfl=(17)
+cfn=(31)
+calls=0 -5586 33
+* * 1369
+
+ob=(1)
+fl=(20)
+fn=(39)
++4564 47 0
+cfl=(14)
+cfn=(24)
+calls=0 -558270 227
+* * 141
+
+ob=(1)
+fl=(21) /usr/local/go/src/net/fd_posix.go
+fn=(40) net.(*netFD).Write
++466143 96 0
+cfl=(11)
+cfn=(16)
+calls=0 0x4f46f1 370
+* * 185281646
+
+ob=(1)
+fl=(22) /usr/local/go/src/net/net.go
+fn=(41) net.(*conn).Write
++85948 195 0
+cfl=(21)
+cfn=(40)
+calls=0 * 96
+* * 185281646
+
+ob=(1)
+fl=(23) /var/lib/jenkins/workspace/testing-update-build/ak/src/ak/tools/tools.go
+fn=(42) marketingPlatform/ak/tools.ScheduleFuncWGContext.func1
++750952 279 0
+cfl=(1)
+cfn=(1)
+calls=0 0x4639c4 509
+* * 656482917
++21 284 0
+cfl=(24) /var/lib/jenkins/workspace/testing-update-build/ak/src/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer/service.go
+cfn=(43) marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).RefreshStaticFilesCache
+calls=0 0x1b8c23e 135
+* * 3737109
+cfl=(25) /var/lib/jenkins/workspace/testing-update-build/ak/src/ak/proc/tracking/trkwebctrl/trackingwebcontrol/trackingwebctrl.go
+cfn=(44) marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).refreshFunc
+calls=0 0x1ba1d3c 522
+* * 277178
+
+ob=(1)
+fl=(26) /usr/local/go/src/net/http/request.go
+fn=(45) net/http.newTextprotoReader
+0x870d68 1001 0
+cfl=(7)
+cfn=(11)
+calls=0 0x49da24 131
+* * 27437
+
+ob=(1)
+fl=(26)
+fn=(46) net/http.readRequest
++400 1031 0
+cfl=(26)
+cfn=(45)
+calls=0 * 1001
+* * 27437
++1467 1123 0
+cfl=(26)
+cfn=(47) net/http.readRequest.func1
+calls=0 +2687 1040
+* * 91134
+
+ob=(1)
+fl=(26)
+fn=(48) net/http.putTextprotoReader
++1220 1011 0
+cfl=(7)
+cfn=(9)
+calls=0 0x49d955 107
+* * 91134
+
+ob=(1)
+fl=(26)
+fn=(47)
+* 1040 0
+cfl=(26)
+cfn=(48)
+calls=0 * 1011
+* * 91134
+
+ob=(1)
+fl=(27) /usr/local/go/src/net/http/server.go
+fn=(49) net/http.(*connReader).lock
++14861 655 0
+cfl=(4)
+cfn=(4)
+calls=0 +14861 90
+* * 179702
+
+ob=(1)
+fl=(27)
+fn=(50) net/http.(*connReader).backgroundRead
++851 679 0
+cfl=(27)
+cfn=(49)
+calls=0 * 655
+* * 179702
+
+ob=(1)
+fl=(27)
+fn=(51) net/http.(*connReader).abortPendingRead
++381 726 0
+cfl=(3)
+cfn=(3)
+calls=0 0x49b76b 70
+* * 553941111
+
+ob=(1)
+fl=(27)
+fn=(52) net/http.newBufioWriterSize
++2515 842 0
+cfl=(7)
+cfn=(11)
+calls=0 0x49da24 131
+* * 70273
+
+ob=(1)
+fl=(27)
+fn=(53) net/http.(*conn).readRequest
++3842 994 0
+cfl=(26)
+cfn=(46)
+calls=0 -19828 1123
+* * 91134
+cfl=(26)
+cfn=(46)
+calls=0 -21295 1031
+* * 27437
++2028 1061 0
+cfl=(27)
+cfn=(52)
+calls=0 -3842 842
+* * 70273
+
+ob=(1)
+fl=(27)
+fn=(54) net/http.(*response).finishRequest
++13076 1658 0
+cfl=(27)
+cfn=(51)
+calls=0 -8385 726
+* * 553941111
+
+ob=(1)
+fl=(27)
+fn=(55) net/http.(*conn).serve
++2619 1916 0
+cfl=(27)
+cfn=(53)
+calls=0 -15104 994
+* * 118572
+cfl=(27)
+cfn=(53)
+calls=0 -13076 1061
+* * 70273
++706 1991 0
+cfl=(27)
+cfn=(56) net/http.serverHandler.ServeHTTP
+calls=0 +20647 2947
+* * 3093283485
++67 1997 0
+cfl=(27)
+cfn=(54)
+calls=0 -3325 1658
+* * 553941111
+
+ob=(1)
+fl=(27)
+fn=(56)
++19874 2947 0
+cfl=(28) /root/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go
+cfn=(57) github.com/gin-gonic/gin.(*Engine).ServeHTTP
+calls=0 0xf44efc 576
+* * 3093283216
+cfl=(28)
+cfn=(57)
+calls=0 0xf44f12 578
+* * 209
+cfl=(28)
+cfn=(57)
+calls=0 0xf44d66 571
+* * 59
+
+ob=(1)
+fl=(10)
+fn=(15)
+0xb2e7fb 116 0
+cfl=(4)
+cfn=(4)
+calls=0 0xb2e7fb 90
+* * 217651
+
+ob=(1)
+fl=(10)
+fn=(58) marketingPlatform/ak/daemonlogger.(*LogFile).watchFileSize
++1545 201 0
+cfl=(2)
+cfn=(2)
+calls=0 0x41f897 442
+* * 360002022
+
+ob=(1)
+fl=(29) /var/lib/jenkins/workspace/testing-update-build/ak/src/ak/journal/object_interface_adapter.go
+fn=(59) marketingPlatform/ak/journal.jrnLogger.WriteJRNFormat
++20108 129 0
+cfl=(13)
+cfn=(21)
+calls=0 0x523610 300
+* * 451479564
++93 130 0
+cfl=(13)
+cfn=(20)
+calls=0 0x5226bb 179
+* * 38712880
+cfl=(13)
+cfn=(20)
+calls=0 0x5227b5 190
+* * 24742196
+cfl=(13)
+cfn=(20)
+calls=0 0x522987 198
+* * 217651
+
+ob=(1)
+fl=(30) /root/go/pkg/mod/github.com/smallnest/rpcx@v1.8.0/util/buffer_pool.go
+fn=(60) github.com/smallnest/rpcx/util.(*LimitedPool).Get
++34789 88 0
+cfl=(7)
+cfn=(11)
+calls=0 0x49da24 131
+* * 1
+
+ob=(1)
+fl=(30)
+fn=(61) github.com/smallnest/rpcx/util.(*LimitedPool).Put
++276 99 0
+cfl=(7)
+cfn=(9)
+calls=0 0x49d955 107
+* * 6
+
+ob=(1)
+fl=(31) /root/go/pkg/mod/github.com/smallnest/rpcx@v1.8.0/protocol/message.go
+fn=(62) github.com/smallnest/rpcx/protocol.Message.EncodeSlicePointer
++4300 264 0
+cfl=(30)
+cfn=(60)
+calls=0 -276 88
+* * 1
+
+ob=(1)
+fl=(32) /root/go/pkg/mod/github.com/segmentio/encoding@v0.3.6/json/json.go
+fn=(63) github.com/segmentio/encoding/json.Marshal
++174139 261 0
+cfl=(7)
+cfn=(11)
+calls=0 0x49da24 131
+* * 29
+
+ob=(1)
+fl=(33) /var/lib/jenkins/workspace/testing-update-build/ak/src/ak/proc/procrpc/rpccodecs/rpccodecs.go
+fn=(64) marketingPlatform/ak/proc/procrpc/rpccodecs.(*SegmentioCodec).Encode
++389787 54 0
+cfl=(32)
+cfn=(63)
+calls=0 * 261
+* * 29
+
+ob=(1)
+fl=(34) /root/go/pkg/mod/github.com/smallnest/rpcx@v1.8.0/client/client.go
+fn=(65) github.com/smallnest/rpcx/client.(*Client).IsClosing
++472436 228 0
+cfl=(4)
+cfn=(4)
+calls=0 +472436 90
+* * 243117
+
+ob=(1)
+fl=(34)
+fn=(66) github.com/smallnest/rpcx/client.(*Client).IsShutdown
++320 235 0
+cfl=(4)
+cfn=(4)
+calls=0 +320 90
+* * 26
+
+ob=(1)
+fl=(34)
+fn=(67) github.com/smallnest/rpcx/client.(*Client).Call
++1727 283 0
+cfl=(34)
+cfn=(68) github.com/smallnest/rpcx/client.(*Client).call
+calls=0 +2891 305
+* * 2465701292
+
+ob=(1)
+fl=(34)
+fn=(68)
++1164 305 0
+cfl=(1)
+cfn=(1)
+calls=0 0x4639c4 509
+* * 2465701292
+
+ob=(1)
+fl=(34)
+fn=(69) github.com/smallnest/rpcx/client.(*Client).send
++7280 490 0
+cfl=(4)
+cfn=(4)
+calls=0 +7280 90
+* * 59427
++1012 547 0
+cfl=(33)
+cfn=(64)
+calls=0 -482927 54
+* * 29
++844 569 0
+cfl=(31)
+cfn=(62)
+calls=0 0xb3d6b2 264
+* * 1
++56 570 0
+cfl=(22)
+cfn=(41)
+calls=0 0x6843a4 195
+* * 185281646
++34 571 0
+cfl=(31)
+cfn=(70) github.com/smallnest/rpcx/protocol.PutData
+calls=0 +34 287
+* * 6
+
+ob=(1)
+fl=(31)
+fn=(70)
+* 287 0
+cfl=(30)
+cfn=(61)
+calls=0 0xb3c5e6 99
+* * 6
+
+ob=(1)
+fl=(34)
+fn=(71) github.com/smallnest/rpcx/client.(*Client).input
++2221 635 0
+cfl=(4)
+cfn=(4)
+calls=0 +2221 90
+* * 81329
+
+ob=(1)
+fl=(35) /root/go/pkg/mod/github.com/smallnest/rpcx@v1.8.0/client/xclient.go
+fn=(72) github.com/smallnest/rpcx/client.(*xClient).selectClient
++33687 259 0
+cfl=(8)
+cfn=(13)
+calls=0 0x49ea55 147
+* * 114027595
++348 271 0
+cfl=(35)
+cfn=(73) github.com/smallnest/rpcx/client.(*xClient).getCachedClient
+calls=0 +897 302
+* * 1930252
+cfl=(35)
+cfn=(73)
+calls=0 +988 305
+* * 243117
+cfl=(35)
+cfn=(73)
+calls=0 +1018 305
+* * 26
+
+ob=(1)
+fl=(35)
+fn=(73)
++549 302 0
+cfl=(8)
+cfn=(13)
+calls=0 0x49ea55 147
+* * 1930252
++91 305 0
+cfl=(34)
+cfn=(65)
+calls=0 -49242 228
+* * 243117
++30 305 0
+cfl=(34)
+cfn=(66)
+calls=0 -49013 235
+* * 26
+
+ob=(1)
+fl=(35)
+fn=(74) github.com/smallnest/rpcx/client.(*xClient).Call
++8462 528 0
+cfl=(35)
+cfn=(72)
+calls=0 -1018 259
+* * 114027595
+cfl=(35)
+cfn=(72)
+calls=0 -670 271
+* * 2173396
++6131 578 0
+cfl=(35)
+cfn=(75) github.com/smallnest/rpcx/client.(*xClient).wrapCall
+calls=0 +11827 818
+* * 2465701292
+
+ob=(1)
+fl=(35)
+fn=(75)
++5696 818 0
+cfl=(34)
+cfn=(67)
+calls=0 -61909 283
+* * 2465701292
+
+ob=(1)
+fl=(36) /var/lib/jenkins/workspace/testing-update-build/ak/src/ak/proc/procrpc/rpccli/client.go
+fn=(76) marketingPlatform/ak/proc/procrpc/rpccli.(*RPCClient).Call
++27317 168 0
+cfl=(35)
+cfn=(74)
+calls=0 -5696 578
+* * 2465701292
+cfl=(35)
+cfn=(74)
+calls=0 -11827 528
+* * 116200991
+
+ob=(1)
+fl=(28)
+fn=(57)
+0xf44d66 571 0
+cfl=(7)
+cfn=(11)
+calls=0 0x49da24 131
+* * 59
++406 576 0
+cfl=(28)
+cfn=(77) github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+calls=0 +2538 620
+* * 3093283216
++22 578 0
+cfl=(7)
+cfn=(9)
+calls=0 0x49d955 107
+* * 209
+
+ob=(1)
+fl=(37) /root/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go
+fn=(78) github.com/gin-gonic/gin.(*Context).Next
++2110 174 0
+cfl=(38) /var/lib/jenkins/workspace/testing-update-build/ak/src/ak/tools/ginlogger/ginlogger.go
+cfn=(79) marketingPlatform/ak/tools/ginlogger.middleware.func1
+calls=0 0x1b13817 42
+* * 2578130923
+cfl=(38)
+cfn=(79)
+calls=0 0x1b13cef 82
+* * 515152292
+
+ob=(1)
+fl=(28)
+fn=(77)
+* 620 0
+cfl=(37)
+cfn=(78)
+calls=0 * 174
+* * 3093283216
+
+ob=(1)
+fl=(37)
+fn=(78)
++4561 174 0
+cfl=(25)
+cfn=(80) marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.getFile.func2
+calls=0 0x1ba45dc 754
+* * 2578130923
+
+ob=(1)
+fl=(39) /root/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go
+fn=(81) github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+* 102 0
+cfl=(37)
+cfn=(78)
+calls=0 * 174
+* * 2578130923
+
+ob=(1)
+fl=(40) /root/go/pkg/mod/github.com/streadway/amqp@v1.0.0/connection.go
+fn=(82) github.com/streadway/amqp.(*Connection).heartbeater
++1089622 551 0
+cfl=(1)
+cfn=(1)
+calls=0 0x4639c4 509
+* * 1993694135
+
+ob=(1)
+fl=(41) /root/go/pkg/mod/github.com/!click!house/clickhouse-go@v1.5.4/bootstrap.go
+fn=(83) github.com/ClickHouse/clickhouse-go.init.0.func1
++5511061 48 0
+cfl=(2)
+cfn=(2)
+calls=0 0x41f897 442
+* * 398734351
+
+ob=(1)
+fl=(42) /root/go/pkg/mod/go.opencensus.io@v0.24.0/stats/view/worker.go
+fn=(84) go.opencensus.io/stats/view.(*worker).start
++2520064 292 0
+cfl=(1)
+cfn=(1)
+calls=0 0x4639c4 509
+* * 389994056
+
+ob=(1)
+fl=(43) /root/go/pkg/mod/github.com/patrickmn/go-cache@v2.1.0+incompatible/cache.go
+fn=(85) github.com/patrickmn/go-cache.(*janitor).Run
++1430168 1079 0
+cfl=(1)
+cfn=(1)
+calls=0 0x4639c4 509
+* * 2039893787
+
+ob=(1)
+fl=(44) /root/go/pkg/mod/github.com/syndtr/goleveldb@v1.0.0/leveldb/util/buffer_pool.go
+fn=(86) github.com/syndtr/goleveldb/leveldb/util.(*BufferPool).drain
++99778 206 0
+cfl=(1)
+cfn=(1)
+calls=0 0x4639c4 509
+* * 397825403
+
+ob=(1)
+fl=(45) /root/go/pkg/mod/github.com/syndtr/goleveldb@v1.0.0/leveldb/db_state.go
+fn=(87) github.com/syndtr/goleveldb/leveldb.(*DB).mpoolDrain
++185185 101 0
+cfl=(1)
+cfn=(1)
+calls=0 0x4639c4 509
+* * 359905793
+
+ob=(1)
+fl=(46) /var/lib/jenkins/workspace/testing-update-build/ak/src/ak/profiler/base_profiler.go
+fn=(88) marketingPlatform/ak/profiler.(*baseProfiler).profiling
++596406 93 0
+cfl=(2)
+cfn=(2)
+calls=0 0x41f897 442
+* * 2799970429
+
+ob=(1)
+fl=(46)
+fn=(89) marketingPlatform/ak/profiler.(*baseProfiler).run.func1.1
++3454 134 0
+cfl=(46)
+cfn=(88)
+calls=0 * 93
+* * 2799970429
+
+ob=(1)
+fl=(47) /root/go/pkg/mod/lab.altkraft.com/altkraft/ledisdb@v0.0.0-20191017154629-ecfc6d8a1bac/ledis/ledis.go
+fn=(90) lab.altkraft.com/altkraft/ledisdb/ledis.(*Ledis).checkTTL.func1
++749270 211 0
+cfl=(1)
+cfn=(1)
+calls=0 0x4639c4 509
+* * 398556144
+
+ob=(1)
+fl=(48) /var/lib/jenkins/workspace/testing-update-build/ak/src/ak/proc/tracking/funcs/mem_ttl_cache.go
+fn=(91) marketingPlatform/ak/proc/tracking/funcs.(*MemTTLCache).updateCacheState
++185464 97 0
+cfl=(1)
+cfn=(1)
+calls=0 0x4639c4 509
+* * 299988160
+
+ob=(1)
+fl=(37)
+fn=(78)
++3278 174 0
+cfl=(39)
+cfn=(81)
+calls=0 0xf46921 102
+* * 2578130923
+
+ob=(1)
+fl=(38)
+fn=(79)
+* 42 0
+cfl=(37)
+cfn=(78)
+calls=0 * 174
+* * 2578130923
++1240 82 0
+cfl=(29)
+cfn=(59)
+calls=0 0xb33c90 129
+* * 451479564
+cfl=(29)
+cfn=(59)
+calls=0 0xb33ced 130
+* * 63672727
+
+ob=(1)
+fl=(24)
+fn=(92) marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.getStaticFilesByRPC
++491500 98 0
+cfl=(36)
+cfn=(76)
+calls=0 0xc521c5 168
+* * 3737109
+
+ob=(1)
+fl=(24)
+fn=(43)
++1379 135 0
+cfl=(24)
+cfn=(92)
+calls=0 * 98
+* * 3737109
+
+ob=(1)
+fl=(49) /var/lib/jenkins/workspace/testing-update-build/ak/src/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer/service_methods.go
+fn=(93) marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).GetStaticFile
++350 29 0
+cfl=(49)
+cfn=(94) marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).GetFile
+calls=0 +918 46
+* * 2578130920
++252 36 0
+cfl=(12)
+cfn=(19)
+calls=0 0x507f35 218
+* * 3
+
+ob=(1)
+fl=(49)
+fn=(94)
++316 46 0
+cfl=(49)
+cfn=(95) marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).getFileData
+calls=0 +700 70
+* * 2578130920
+
+ob=(1)
+fl=(49)
+fn=(95)
++384 70 0
+cfl=(49)
+cfn=(96) marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).renderedTagManagerScript
+calls=0 +6260 202
+* * 2569502230
+cfl=(49)
+cfn=(96)
+calls=0 +6500 207
+* * 8626891
+cfl=(49)
+cfn=(96)
+calls=0 +6753 212
+* * 1798
+
+ob=(1)
+fl=(49)
+fn=(97) marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).getContainerComponents
++1779 118 0
+cfl=(36)
+cfn=(76)
+calls=0 0xc521c5 168
+* * 2569502230
+
+ob=(1)
+fl=(49)
+fn=(98) marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).convertComponentsIntoContainerInfo
++694 146 0
+cfl=(50) /var/lib/jenkins/workspace/testing-update-build/ak/src/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer/structs.go
+cfn=(99) marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.transferInstructionDataOut
+calls=0 +14889 432
+* * 239030
++1629 157 0
+cfl=(49)
+cfn=(100) marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).updateTagForScript
+calls=0 +2344 175
+* * 8387860
+
+ob=(1)
+fl=(49)
+fn=(100)
++715 175 0
+cfl=(49)
+cfn=(101) marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).getPopupObj
+calls=0 +6562 338
+* * 8385764
+cfl=(49)
+cfn=(101)
+calls=0 +6265 327
+* * 2096
+
+ob=(1)
+fl=(49)
+fn=(96)
++1059 202 0
+cfl=(49)
+cfn=(97)
+calls=0 -3038 118
+* * 2569502230
++240 207 0
+cfl=(49)
+cfn=(98)
+calls=0 -1774 157
+* * 8387860
+cfl=(49)
+cfn=(98)
+calls=0 -3403 146
+* * 239030
++253 212 0
+cfl=(15)
+cfn=(26)
+calls=0 0x5a48c6 158
+* * 1798
+
+ob=(1)
+fl=(49)
+fn=(101)
++3998 327 0
+cfl=(12)
+cfn=(19)
+calls=0 0x507f35 218
+* * 2096
++297 338 0
+cfl=(36)
+cfn=(76)
+calls=0 0xc521c5 168
+* * 8385764
+
+ob=(1)
+fl=(50)
+fn=(102) marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.transferTagDataOut
++584 262 0
+cfl=(50)
+cfn=(103) marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.getTagByTagType
+calls=0 +6858 439
+* * 239030
+
+ob=(1)
+fl=(50)
+fn=(99)
++5420 432 0
+cfl=(50)
+cfn=(102)
+calls=0 * 262
+* * 239030
+
+ob=(1)
+fl=(50)
+fn=(103)
++854 439 0
+cfl=(16)
+cfn=(28)
+calls=0 0x5ea9ef 297
+* * 237489
+cfl=(16)
+cfn=(28)
+calls=0 0x5eaa48 299
+* * 1541
+
+ob=(1)
+fl=(51) /root/go/pkg/mod/github.com/segmentio/agecache@v0.0.2/cache.go
+fn=(104) github.com/segmentio/agecache.New.func1
++7733 164 0
+cfl=(2)
+cfn=(5)
+calls=0 0x41f8d7 447
+* * 359977832
+
+ob=(1)
+fl=(52) /var/lib/jenkins/workspace/testing-update-build/ak/src/ak/proc/tracking/trkwebctrl/trackingwebcontrol/static_handlers.go
+fn=(105) marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getWebLayerStaticFile
++44779 123 0
+cfl=(49)
+cfn=(93)
+calls=0 -26207 29
+* * 2578130920
+cfl=(49)
+cfn=(93)
+calls=0 -25955 36
+* * 3
+
+ob=(1)
+fl=(25)
+fn=(44)
++17494 522 0
+cfl=(25)
+cfn=(106) marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).refreshTrkCache
+calls=0 +29758 864
+* * 198479
+cfl=(25)
+cfn=(106)
+calls=0 +29315 854
+* * 78698
+
+ob=(1)
+fl=(25)
+fn=(80)
++10400 754 0
+cfl=(52)
+cfn=(105)
+calls=0 -17494 123
+* * 2578130923
+
+ob=(1)
+fl=(25)
+fn=(106)
++1421 854 0
+cfl=(53) /var/lib/jenkins/workspace/testing-update-build/ak/src/ak/proc/tracking/trkwebctrl/trackingwebcontrol/trackingwebctrl_rpc.go
+cfn=(107) marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getAccounts
+calls=0 +39080 74
+* * 78698
++443 864 0
+cfl=(53)
+cfn=(108) marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getListsForAccount
+calls=0 +38147 93
+* * 198479
+
+ob=(1)
+fl=(53)
+fn=(107)
++37216 74 0
+cfl=(36)
+cfn=(76)
+calls=0 0xc521c5 168
+* * 78698
+
+ob=(1)
+fl=(53)
+fn=(108)
++488 93 0
+cfl=(36)
+cfn=(76)
+calls=0 0xc521c5 168
+* * 198479

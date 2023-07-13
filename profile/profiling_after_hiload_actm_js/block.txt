@@ -1,0 +1,56 @@
+File: trkwebctrl
+Build ID: eb53bae02d1c0cebf181d6aa585422bdebdd5c7b
+Type: delay
+Time: Jul 11, 2023 at 1:33pm (MSK)
+Showing nodes accounting for 3.97hrs, 100% of 3.97hrs total
+Dropped 59 nodes (cum <= 0.02hrs)
+      flat  flat%   sum%        cum   cum%
+   2.50hrs 62.99% 62.99%    2.50hrs 62.99%  runtime.selectgo
+   0.99hrs 24.90% 87.89%    0.99hrs 24.90%  runtime.chanrecv1
+   0.18hrs  4.42% 92.31%    0.18hrs  4.42%  sync.(*Mutex).Lock (inline)
+   0.15hrs  3.88% 96.18%    0.15hrs  3.88%  sync.(*Cond).Wait
+   0.10hrs  2.52% 98.70%    0.10hrs  2.52%  runtime.chanrecv2
+   0.05hrs  1.30%   100%    0.05hrs  1.30%  internal/poll.(*fdMutex).rwlock
+         0     0%   100%    0.11hrs  2.79%  github.com/ClickHouse/clickhouse-go.init.0.func1
+         0     0%   100%    0.86hrs 21.64%  github.com/gin-gonic/gin.(*Context).Next (inline)
+         0     0%   100%    0.86hrs 21.64%  github.com/gin-gonic/gin.(*Engine).ServeHTTP
+         0     0%   100%    0.86hrs 21.64%  github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+         0     0%   100%    0.72hrs 18.04%  github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+         0     0%   100%    0.57hrs 14.27%  github.com/patrickmn/go-cache.(*janitor).Run
+         0     0%   100%    0.10hrs  2.52%  github.com/segmentio/agecache.New.func1
+         0     0%   100%    0.68hrs 17.25%  github.com/smallnest/rpcx/client.(*Client).Call
+         0     0%   100%    0.68hrs 17.25%  github.com/smallnest/rpcx/client.(*Client).call
+         0     0%   100%    0.05hrs  1.30%  github.com/smallnest/rpcx/client.(*Client).send
+         0     0%   100%    0.72hrs 18.07%  github.com/smallnest/rpcx/client.(*xClient).Call
+         0     0%   100%    0.03hrs  0.81%  github.com/smallnest/rpcx/client.(*xClient).selectClient
+         0     0%   100%    0.68hrs 17.25%  github.com/smallnest/rpcx/client.(*xClient).wrapCall
+         0     0%   100%    0.55hrs 13.95%  github.com/streadway/amqp.(*Connection).heartbeater
+         0     0%   100%    0.10hrs  2.52%  github.com/syndtr/goleveldb/leveldb.(*DB).mpoolDrain
+         0     0%   100%    0.11hrs  2.78%  github.com/syndtr/goleveldb/leveldb/util.(*BufferPool).drain
+         0     0%   100%    0.11hrs  2.73%  go.opencensus.io/stats/view.(*worker).start
+         0     0%   100%    0.05hrs  1.30%  internal/poll.(*FD).Write
+         0     0%   100%    0.05hrs  1.30%  internal/poll.(*FD).writeLock (inline)
+         0     0%   100%    0.11hrs  2.79%  lab.altkraft.com/altkraft/ledisdb/ledis.(*Ledis).checkTTL.func1
+         0     0%   100%    0.13hrs  3.16%  log.(*Logger).Writer
+         0     0%   100%    0.10hrs  2.52%  marketingPlatform/ak/daemonlogger.(*LogFile).watchFileSize
+         0     0%   100%    0.14hrs  3.60%  marketingPlatform/ak/journal.jrnLogger.WriteJRNFormat
+         0     0%   100%    0.72hrs 18.07%  marketingPlatform/ak/proc/procrpc/rpccli.(*RPCClient).Call
+         0     0%   100%    0.08hrs  2.10%  marketingPlatform/ak/proc/tracking/funcs.(*MemTTLCache).updateCacheState
+         0     0%   100%    0.72hrs 18.04%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getWebLayerStaticFile
+         0     0%   100%    0.72hrs 18.04%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.getFile.func2
+         0     0%   100%    0.72hrs 18.04%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).GetFile
+         0     0%   100%    0.72hrs 18.04%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).GetStaticFile
+         0     0%   100%    0.71hrs 17.98%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).getContainerComponents
+         0     0%   100%    0.72hrs 18.04%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).getFileData
+         0     0%   100%    0.72hrs 18.04%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).renderedTagManagerScript
+         0     0%   100%    0.78hrs 19.59%  marketingPlatform/ak/profiler.(*baseProfiler).profiling
+         0     0%   100%    0.78hrs 19.59%  marketingPlatform/ak/profiler.(*baseProfiler).run.func1.1
+         0     0%   100%    0.18hrs  4.62%  marketingPlatform/ak/tools.ScheduleFuncWGContext.func1
+         0     0%   100%    0.86hrs 21.64%  marketingPlatform/ak/tools/ginlogger.middleware.func1
+         0     0%   100%    0.05hrs  1.30%  net.(*conn).Write
+         0     0%   100%    0.05hrs  1.30%  net.(*netFD).Write
+         0     0%   100%    1.01hrs 25.52%  net/http.(*conn).serve
+         0     0%   100%    0.15hrs  3.88%  net/http.(*connReader).abortPendingRead
+         0     0%   100%    0.15hrs  3.88%  net/http.(*response).finishRequest
+         0     0%   100%    0.86hrs 21.64%  net/http.serverHandler.ServeHTTP
+         0     0%   100%    0.03hrs  0.81%  sync.(*RWMutex).Lock
