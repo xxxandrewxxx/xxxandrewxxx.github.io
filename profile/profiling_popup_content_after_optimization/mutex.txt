@@ -1,0 +1,29 @@
+File: trkwebctrl
+Build ID: 1485ab068a0a7a8ca708d3b6fb2684166b991d47
+Type: delay
+Time: Jul 13, 2023 at 4:38pm (MSK)
+Showing nodes accounting for 37.26s, 99.88% of 37.30s total
+Dropped 36 nodes (cum <= 0.19s)
+      flat  flat%   sum%        cum   cum%
+    37.26s 99.88% 99.88%     37.26s 99.88%  sync.(*Mutex).Unlock (partial-inline)
+         0     0% 99.88%     37.30s   100%  github.com/gin-gonic/gin.(*Context).Next (inline)
+         0     0% 99.88%     37.30s   100%  github.com/gin-gonic/gin.(*Engine).ServeHTTP
+         0     0% 99.88%     37.30s   100%  github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+         0     0% 99.88%     33.23s 89.10%  github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+         0     0% 99.88%      1.06s  2.84%  io.(*multiWriter).Write
+         0     0% 99.88%     36.15s 96.92%  log.(*Logger).Output
+         0     0% 99.88%      9.36s 25.08%  log.(*Logger).Printf
+         0     0% 99.88%     23.79s 63.78%  log.(*Logger).Println
+         0     0% 99.88%      1.06s  2.85%  log.(*Logger).Writer
+         0     0% 99.88%      1.06s  2.84%  marketingPlatform/ak/daemonlogger.(*LogFile).Write
+         0     0% 99.88%      4.07s 10.90%  marketingPlatform/ak/journal.jrnLogger.WriteJRNFormat
+         0     0% 99.88%     33.23s 89.10%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getPopupContent
+         0     0% 99.88%      3.72s  9.98%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getTemplateVariables
+         0     0% 99.88%     33.23s 89.10%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).popupContent
+         0     0% 99.88%     33.23s 89.10%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.syncReq.func2
+         0     0% 99.88%     29.51s 79.12%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).RestoreAcidProccesing
+         0     0% 99.88%      6.77s 18.15%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).getAcidByClientFPrint
+         0     0% 99.88%      5.30s 14.21%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).getAcidByServerFPrint
+         0     0% 99.88%     37.30s   100%  marketingPlatform/ak/tools/ginlogger.middleware.func1
+         0     0% 99.88%     37.30s   100%  net/http.(*conn).serve
+         0     0% 99.88%     37.30s   100%  net/http.serverHandler.ServeHTTP

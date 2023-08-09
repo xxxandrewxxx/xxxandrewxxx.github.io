@@ -1,0 +1,98 @@
+File: trkwebctrl
+Build ID: 1485ab068a0a7a8ca708d3b6fb2684166b991d47
+Type: goroutine
+Time: Jul 13, 2023 at 4:38pm (MSK)
+Showing nodes accounting for 180, 100% of 180 total
+      flat  flat%   sum%        cum   cum%
+       173 96.11% 96.11%        173 96.11%  runtime.gopark
+         2  1.11% 97.22%          2  1.11%  syscall.Syscall
+         1  0.56% 97.78%          1  0.56%  runtime.goroutineProfileWithLabels
+         1  0.56% 98.33%          1  0.56%  runtime.makeslice
+         1  0.56% 98.89%          1  0.56%  runtime.notetsleepg
+         1  0.56% 99.44%          1  0.56%  runtime/pprof.(*profileBuilder).flush
+         1  0.56%   100%          2  1.11%  runtime/pprof.writeHeapInternal
+         0     0%   100%        117 65.00%  bufio.(*Reader).Peek
+         0     0%   100%          6  3.33%  bufio.(*Reader).Read
+         0     0%   100%        117 65.00%  bufio.(*Reader).fill
+         0     0%   100%          1  0.56%  github.com/ClickHouse/clickhouse-go.init.0.func1
+         0     0%   100%          2  1.11%  github.com/allegro/bigcache/v3.newBigCache.func1
+         0     0%   100%          1  0.56%  github.com/leprosus/golang-ttl-map.(*Heap).handle
+         0     0%   100%          7  3.89%  github.com/patrickmn/go-cache.(*janitor).Run
+         0     0%   100%          1  0.56%  github.com/segmentio/agecache.New.func1
+         0     0%   100%          1  0.56%  github.com/sevlyar/go-daemon.ServeSignals
+         0     0%   100%          1  0.56%  github.com/smallnest/rpcx/client.(*Client).input
+         0     0%   100%          1  0.56%  github.com/smallnest/rpcx/client.(*xClient).watch
+         0     0%   100%          1  0.56%  github.com/smallnest/rpcx/protocol.(*Message).Decode
+         0     0%   100%          5  2.78%  github.com/streadway/amqp.(*Connection).heartbeater
+         0     0%   100%          5  2.78%  github.com/streadway/amqp.(*Connection).reader
+         0     0%   100%          5  2.78%  github.com/streadway/amqp.(*reader).ReadFrame
+         0     0%   100%          1  0.56%  go.opencensus.io/stats/view.(*worker).start
+         0     0%   100%          1  0.56%  internal/poll.(*FD).Accept
+         0     0%   100%        125 69.44%  internal/poll.(*FD).Read
+         0     0%   100%        124 68.89%  internal/poll.(*pollDesc).wait
+         0     0%   100%        124 68.89%  internal/poll.(*pollDesc).waitRead (inline)
+         0     0%   100%          2  1.11%  internal/poll.ignoringEINTRIO (inline)
+         0     0%   100%        124 68.89%  internal/poll.runtime_pollWait
+         0     0%   100%          6  3.33%  io.ReadAtLeast
+         0     0%   100%          6  3.33%  io.ReadFull (inline)
+         0     0%   100%          1  0.56%  main.main
+         0     0%   100%          1  0.56%  marketingPlatform/ak/daemonize.(*Daemonizer).Daemonize
+         0     0%   100%          1  0.56%  marketingPlatform/ak/daemonlogger.(*LogFile).watchFileSize
+         0     0%   100%          1  0.56%  marketingPlatform/ak/drivers/ttl.(*WebDeduplicationDB).cleanUp
+         0     0%   100%          1  0.56%  marketingPlatform/ak/proc/tracking/funcs.(*MemTTLCache).updateCacheState
+         0     0%   100%          7  3.89%  marketingPlatform/ak/profiler.(*baseProfiler).profiling
+         0     0%   100%          1  0.56%  marketingPlatform/ak/profiler.(*baseProfiler).profiling.func2
+         0     0%   100%          5  2.78%  marketingPlatform/ak/profiler.(*baseProfiler).profiling.func3
+         0     0%   100%          1  0.56%  marketingPlatform/ak/profiler.(*baseProfiler).run.func1
+         0     0%   100%          7  3.89%  marketingPlatform/ak/profiler.(*baseProfiler).run.func1.1
+         0     0%   100%          5  2.78%  marketingPlatform/ak/rmq/publisher.(*AmqPublisher).Run.func1
+         0     0%   100%          5  2.78%  marketingPlatform/ak/rmq/publisher.(*Publisher).run.func1
+         0     0%   100%          5  2.78%  marketingPlatform/ak/rmq/publisher.(*Publisher).runPublish.func1
+         0     0%   100%          5  2.78%  marketingPlatform/ak/rmq/publisher.(*Publisher).runPublish.func2
+         0     0%   100%          1  0.56%  marketingPlatform/ak/service_server.(*ServiceServer).Run
+         0     0%   100%          1  0.56%  marketingPlatform/ak/service_server.(*ServiceServer).Run.func1
+         0     0%   100%          2  1.11%  marketingPlatform/ak/tools.ScheduleFuncWGContext.func1
+         0     0%   100%          1  0.56%  net.(*TCPListener).Accept
+         0     0%   100%          1  0.56%  net.(*TCPListener).accept
+         0     0%   100%        123 68.33%  net.(*conn).Read
+         0     0%   100%        123 68.33%  net.(*netFD).Read
+         0     0%   100%          1  0.56%  net.(*netFD).accept
+         0     0%   100%          1  0.56%  net/http.(*Server).Serve
+         0     0%   100%        117 65.00%  net/http.(*conn).readRequest
+         0     0%   100%        117 65.00%  net/http.(*conn).serve
+         0     0%   100%        117 65.00%  net/http.(*connReader).Read
+         0     0%   100%          2  1.11%  os.(*File).Read
+         0     0%   100%          2  1.11%  os.(*File).read (inline)
+         0     0%   100%          2  1.11%  os.ReadFile
+         0     0%   100%          1  0.56%  os/signal.loop
+         0     0%   100%          1  0.56%  os/signal.signal_recv
+         0     0%   100%          9  5.00%  runtime.chanrecv
+         0     0%   100%          5  2.78%  runtime.chanrecv1
+         0     0%   100%          4  2.22%  runtime.chanrecv2
+         0     0%   100%          1  0.56%  runtime.goparkunlock (inline)
+         0     0%   100%          1  0.56%  runtime.main
+         0     0%   100%        124 68.89%  runtime.netpollblock
+         0     0%   100%         39 21.67%  runtime.selectgo
+         0     0%   100%          1  0.56%  runtime.semacquire1
+         0     0%   100%          5  2.78%  runtime/pprof.(*Profile).WriteTo
+         0     0%   100%          1  0.56%  runtime/pprof.(*profileBuilder).appendLocsForStack
+         0     0%   100%          1  0.56%  runtime/pprof.(*profileBuilder).build
+         0     0%   100%          1  0.56%  runtime/pprof.(*profileBuilder).emitLocation
+         0     0%   100%          2  1.11%  runtime/pprof.(*profileBuilder).readMapping
+         0     0%   100%          1  0.56%  runtime/pprof.StopCPUProfile
+         0     0%   100%          2  1.11%  runtime/pprof.newProfileBuilder
+         0     0%   100%          1  0.56%  runtime/pprof.printCountCycleProfile
+         0     0%   100%          1  0.56%  runtime/pprof.printCountProfile
+         0     0%   100%          1  0.56%  runtime/pprof.profileWriter
+         0     0%   100%          1  0.56%  runtime/pprof.runtime_goroutineProfileWithLabels
+         0     0%   100%          1  0.56%  runtime/pprof.writeAlloc
+         0     0%   100%          1  0.56%  runtime/pprof.writeBlock
+         0     0%   100%          1  0.56%  runtime/pprof.writeGoroutine
+         0     0%   100%          1  0.56%  runtime/pprof.writeHeap
+         0     0%   100%          1  0.56%  runtime/pprof.writeProfileInternal
+         0     0%   100%          2  1.11%  runtime/pprof.writeRuntimeProfile
+         0     0%   100%          1  0.56%  runtime/pprof.writeThreadCreate
+         0     0%   100%          1  0.56%  sync.(*WaitGroup).Wait
+         0     0%   100%          1  0.56%  sync.runtime_Semacquire
+         0     0%   100%          2  1.11%  syscall.Read (inline)
+         0     0%   100%          2  1.11%  syscall.read

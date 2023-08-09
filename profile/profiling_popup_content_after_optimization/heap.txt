@@ -1,0 +1,52 @@
+File: trkwebctrl
+Build ID: 1485ab068a0a7a8ca708d3b6fb2684166b991d47
+Type: inuse_space
+Time: Jul 13, 2023 at 4:38pm (MSK)
+Showing nodes accounting for 659.68MB, 95.44% of 691.19MB total
+Dropped 116 nodes (cum <= 3.46MB)
+      flat  flat%   sum%        cum   cum%
+  261.72MB 37.87% 37.87%   516.38MB 74.71%  github.com/allegro/bigcache/v3.initNewShard
+  254.66MB 36.84% 74.71%   254.66MB 36.84%  github.com/allegro/bigcache/v3/queue.NewBytesQueue (inline)
+  130.60MB 18.90% 93.61%   130.60MB 18.90%  github.com/segmentio/encoding/json.decoder.decodeBytes
+    6.05MB  0.88% 94.48%     6.05MB  0.88%  marketingPlatform/ak/rmq/publisher.NewSession
+    2.53MB  0.37% 94.85%     6.09MB  0.88%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getPopupContent
+    2.06MB   0.3% 95.15%     3.58MB  0.52%  marketingPlatform/ak/backendController.R.MarshalJSON
+    1.55MB  0.22% 95.37%     5.14MB  0.74%  encoding/json.Marshal
+    0.50MB 0.072% 95.44%     6.59MB  0.95%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).popupContent
+         0     0% 95.44%     4.10MB  0.59%  encoding/json.(*encodeState).marshal
+         0     0% 95.44%     4.10MB  0.59%  encoding/json.(*encodeState).reflectValue
+         0     0% 95.44%     4.10MB  0.59%  encoding/json.marshalerEncoder
+         0     0% 95.44%   516.38MB 74.71%  github.com/allegro/bigcache/v3.New (inline)
+         0     0% 95.44%   516.38MB 74.71%  github.com/allegro/bigcache/v3.newBigCache
+         0     0% 95.44%     6.15MB  0.89%  github.com/gin-gonic/gin.(*Context).JSON (inline)
+         0     0% 95.44%    12.74MB  1.84%  github.com/gin-gonic/gin.(*Context).Next (inline)
+         0     0% 95.44%     6.15MB  0.89%  github.com/gin-gonic/gin.(*Context).Render
+         0     0% 95.44%    12.74MB  1.84%  github.com/gin-gonic/gin.(*Engine).ServeHTTP
+         0     0% 95.44%    12.74MB  1.84%  github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+         0     0% 95.44%    12.74MB  1.84%  github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+         0     0% 95.44%     6.15MB  0.89%  github.com/gin-gonic/gin/render.JSON.Render
+         0     0% 95.44%     6.15MB  0.89%  github.com/gin-gonic/gin/render.WriteJSON
+         0     0% 95.44%   130.60MB 18.90%  github.com/segmentio/encoding/json.Parse
+         0     0% 95.44%   130.60MB 18.90%  github.com/segmentio/encoding/json.Unmarshal
+         0     0% 95.44%   130.60MB 18.90%  github.com/segmentio/encoding/json.constructMapDecodeFunc.func1
+         0     0% 95.44%   130.60MB 18.90%  github.com/segmentio/encoding/json.constructStructDecodeFunc.func1
+         0     0% 95.44%   130.60MB 18.90%  github.com/segmentio/encoding/json.decoder.decodeMap
+         0     0% 95.44%   130.60MB 18.90%  github.com/segmentio/encoding/json.decoder.decodeStruct
+         0     0% 95.44%   130.60MB 18.90%  github.com/smallnest/rpcx/client.(*Client).input
+         0     0% 95.44%   527.21MB 76.28%  main.main
+         0     0% 95.44%   516.38MB 74.71%  marketingPlatform/ak/control/filecache.NewFileCache
+         0     0% 95.44%   527.21MB 76.28%  marketingPlatform/ak/daemonize.(*Daemonizer).Daemonize
+         0     0% 95.44%   130.60MB 18.90%  marketingPlatform/ak/proc/procrpc/rpccodecs.(*SegmentioCodec).Decode
+         0     0% 95.44%     9.07MB  1.31%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).Init
+         0     0% 95.44%   518.14MB 74.96%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).Run
+         0     0% 95.44%    12.74MB  1.84%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.syncReq.func2
+         0     0% 95.44%   512.30MB 74.12%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/enrichment_service.NewEnrichmentService
+         0     0% 95.44%     3.56MB  0.52%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).RestoreAcidProccesing
+         0     0% 95.44%     4.08MB  0.59%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.NewMatchingService
+         0     0% 95.44%     6.05MB  0.88%  marketingPlatform/ak/rmq/publisher.NewPublisher (inline)
+         0     0% 95.44%     6.05MB  0.88%  marketingPlatform/ak/rmq/publisher.configurePublisher
+         0     0% 95.44%    12.74MB  1.84%  marketingPlatform/ak/tools/ginlogger.middleware.func1
+         0     0% 95.44%    14.24MB  2.06%  net/http.(*conn).serve
+         0     0% 95.44%    12.74MB  1.84%  net/http.serverHandler.ServeHTTP
+         0     0% 95.44%     8.83MB  1.28%  runtime.doInit
+         0     0% 95.44%   536.04MB 77.55%  runtime.main
