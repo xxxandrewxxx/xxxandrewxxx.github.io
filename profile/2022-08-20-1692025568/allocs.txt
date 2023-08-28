@@ -1,0 +1,129 @@
+File: trkwebctrl
+Build ID: 2a6e97ebd0584c23046de2e113885e697b606e55
+Type: alloc_space
+Time: Aug 14, 2023 at 6:16pm (MSK)
+Showing nodes accounting for 196943.50MB, 92.40% of 213137.25MB total
+Dropped 544 nodes (cum <= 1065.69MB)
+      flat  flat%   sum%        cum   cum%
+67572.44MB 31.70% 31.70% 67572.44MB 31.70%  bytes.growSlice
+31137.62MB 14.61% 46.31% 31137.62MB 14.61%  github.com/allegro/bigcache/v3.readEntry (inline)
+15982.73MB  7.50% 53.81% 34204.92MB 16.05%  encoding/json.Marshal
+15718.09MB  7.37% 61.19% 18280.41MB  8.58%  marketingPlatform/ak/backendController.R.MarshalJSON
+14058.81MB  6.60% 67.78% 14101.31MB  6.62%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getPopupContent
+ 8790.06MB  4.12% 71.91%  8946.06MB  4.20%  net/textproto.(*Reader).ReadMIMEHeader
+ 5288.84MB  2.48% 74.39%  7479.70MB  3.51%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.BuildFP
+ 5011.47MB  2.35% 76.74%  5148.97MB  2.42%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.JoinFPs
+ 2887.50MB  1.35% 78.09%  2887.50MB  1.35%  bufio.NewReaderSize (inline)
+ 2639.32MB  1.24% 79.33%  2639.32MB  1.24%  strings.(*Builder).WriteString (inline)
+ 2323.86MB  1.09% 80.42%  2323.86MB  1.09%  strings.genSplit
+ 1903.86MB  0.89% 81.32%  1904.37MB  0.89%  log.(*Logger).Output
+ 1728.10MB  0.81% 82.13%  1728.10MB  0.81%  net/http.Header.Clone (inline)
+ 1714.41MB   0.8% 82.93%  1749.41MB  0.82%  mime.ParseMediaType
+ 1711.62MB   0.8% 83.73%  1711.62MB   0.8%  net/textproto.MIMEHeader.Set (inline)
+ 1690.86MB  0.79% 84.53%  1690.86MB  0.79%  fmt.Sprintf
+ 1690.66MB  0.79% 85.32%  2928.33MB  1.37%  github.com/json-iterator/go.(*sortKeysMapEncoder).Encode
+ 1278.42MB   0.6% 85.92%  4635.92MB  2.18%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).fillAndSendPopupEvent
+ 1252.64MB  0.59% 86.51%  1252.64MB  0.59%  marketingPlatform/ak/events.NewBaseMPlatformEvent (inline)
+ 1194.19MB  0.56% 87.07%  7498.14MB  3.52%  net/http.(*conn).readRequest
+ 1162.88MB  0.55% 87.61%  2322.61MB  1.09%  github.com/allegro/bigcache/v3.initNewShard
+ 1159.73MB  0.54% 88.16%  1159.73MB  0.54%  github.com/allegro/bigcache/v3/queue.NewBytesQueue (inline)
+ 1134.27MB  0.53% 88.69%  1134.27MB  0.53%  fmt.Append
+ 1096.58MB  0.51% 89.20%  1096.58MB  0.51%  github.com/modern-go/reflect2.(*UnsafeMapType).UnsafeIterate
+ 1084.31MB  0.51% 89.71%  1084.31MB  0.51%  net/url.parseQuery
+  853.91MB   0.4% 90.11% 13909.93MB  6.53%  net/http.(*Request).ParseMultipartForm
+  763.19MB  0.36% 90.47%  6035.42MB  2.83%  net/http.readRequest
+  636.55MB   0.3% 90.77% 197294.84MB 92.57%  marketingPlatform/ak/tools/ginlogger.middleware.func1
+  590.05MB  0.28% 91.05%  5136.98MB  2.41%  mime/multipart.newPart
+  557.59MB  0.26% 91.31%  9126.33MB  4.28%  mime/multipart.(*Reader).readForm
+  333.09MB  0.16% 91.47%  1285.19MB   0.6%  github.com/streadway/amqp.(*Channel).Publish
+  227.52MB  0.11% 91.57%     3107MB  1.46%  mime/multipart.NewReader
+  210.01MB 0.099% 91.67% 67782.45MB 31.80%  bytes.(*Buffer).grow
+  189.05MB 0.089% 91.76% 15647.50MB  7.34%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).popupEnv
+  168.02MB 0.079% 91.84%  2058.74MB  0.97%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).sendPopupEvent
+  166.57MB 0.078% 91.92% 41486.99MB 19.46%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).renderedTagManagerScript
+  166.54MB 0.078% 91.99% 14670.42MB  6.88%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).popupContent
+  150.54MB 0.071% 92.07% 25609.75MB 12.02%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.syncReq.func2
+  107.50MB  0.05% 92.12%  1191.81MB  0.56%  net/url.ParseQuery (inline)
+  100.51MB 0.047% 92.16% 14509.70MB  6.81%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getPopupEnv
+   95.02MB 0.045% 92.21%  5419.47MB  2.54%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).specifyAci
+   91.50MB 0.043% 92.25% 23477.78MB 11.02%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).deduplicationMiddleware.func2
+      56MB 0.026% 92.28%  3064.34MB  1.44%  github.com/json-iterator/go.(*onePtrEncoder).Encode
+      40MB 0.019% 92.30%  1890.72MB  0.89%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getMPlatformEvent
+   37.50MB 0.018% 92.31%  4504.08MB  2.11%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).getAcidFromCache
+   33.50MB 0.016% 92.33% 204798.70MB 96.09%  net/http.(*conn).serve
+      31MB 0.015% 92.34% 45400.78MB 21.30%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).renderedPopupLibrary
+   25.50MB 0.012% 92.36% 18894.91MB  8.87%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).RestoreAcidProccesing
+   24.50MB 0.011% 92.37%  2942.51MB  1.38%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).sendPopupFormData
+   23.50MB 0.011% 92.38% 34839.56MB 16.35%  github.com/gin-gonic/gin.(*Context).JSON (inline)
+   21.50MB  0.01% 92.39% 13962.44MB  6.55%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).takeLimitKey
+   20.50MB 0.0096% 92.40% 65500.55MB 30.73%  text/template.(*Template).execute
+    5.50MB 0.0026% 92.40% 48065.75MB 22.55%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.syncReq.func3
+    3.50MB 0.0016% 92.40% 97869.63MB 45.92%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).getFileData
+    0.54MB 0.00025% 92.40%  2326.78MB  1.09%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).Run
+         0     0% 92.40%  1942.45MB  0.91%  bytes.(*Buffer).ReadFrom
+         0     0% 92.40%    65818MB 30.88%  bytes.(*Buffer).Write
+         0     0% 92.40% 18289.69MB  8.58%  encoding/json.(*encodeState).marshal
+         0     0% 92.40% 18289.69MB  8.58%  encoding/json.(*encodeState).reflectValue
+         0     0% 92.40% 18289.19MB  8.58%  encoding/json.marshalerEncoder
+         0     0% 92.40% 31152.12MB 14.62%  github.com/allegro/bigcache/v3.(*BigCache).Get
+         0     0% 92.40% 31152.12MB 14.62%  github.com/allegro/bigcache/v3.(*cacheShard).get
+         0     0% 92.40%  2322.61MB  1.09%  github.com/allegro/bigcache/v3.New (inline)
+         0     0% 92.40%  2322.61MB  1.09%  github.com/allegro/bigcache/v3.newBigCache
+         0     0% 92.40%  1711.62MB   0.8%  github.com/gin-gonic/gin.(*Context).Header
+         0     0% 92.40% 198834.97MB 93.29%  github.com/gin-gonic/gin.(*Context).Next (inline)
+         0     0% 92.40% 34816.06MB 16.34%  github.com/gin-gonic/gin.(*Context).Render
+         0     0% 92.40% 197177.27MB 92.51%  github.com/gin-gonic/gin.(*Engine).ServeHTTP
+         0     0% 92.40% 197266.84MB 92.55%  github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+         0     0% 92.40%  1728.10MB  0.81%  github.com/gin-gonic/gin.(*responseWriter).WriteHeaderNow (partial-inline)
+         0     0% 92.40% 193685.18MB 90.87%  github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+         0     0% 92.40% 34816.06MB 16.34%  github.com/gin-gonic/gin/render.JSON.Render
+         0     0% 92.40% 34819.56MB 16.34%  github.com/gin-gonic/gin/render.WriteJSON
+         0     0% 92.40%  2904.83MB  1.36%  github.com/json-iterator/go.(*OptionalEncoder).Encode
+         0     0% 92.40%  3200.85MB  1.50%  github.com/json-iterator/go.(*Stream).WriteVal
+         0     0% 92.40%  1958.52MB  0.92%  github.com/json-iterator/go.(*dynamicEncoder).Encode
+         0     0% 92.40%  2842.33MB  1.33%  github.com/json-iterator/go.(*frozenConfig).Marshal
+         0     0% 92.40%  1851.15MB  0.87%  github.com/json-iterator/go.(*placeholderEncoder).Encode
+         0     0% 92.40%  1855.20MB  0.87%  github.com/json-iterator/go.(*sliceEncoder).Encode
+         0     0% 92.40%  2174.03MB  1.02%  github.com/json-iterator/go.(*structEncoder).Encode
+         0     0% 92.40%  2112.02MB  0.99%  github.com/json-iterator/go.(*structFieldEncoder).Encode
+         0     0% 92.40%  2032.13MB  0.95%  github.com/smallnest/rpcx/client.(*Client).input
+         0     0% 92.40% 18326.15MB  8.60%  github.com/yangxikun/gin-limit-by-key.NewRateLimiter.func1
+         0     0% 92.40%  1948.11MB  0.91%  io.Copy (inline)
+         0     0% 92.40%  2083.95MB  0.98%  io.CopyN
+         0     0% 92.40%  1948.11MB  0.91%  io.copyBuffer
+         0     0% 92.40%  1625.34MB  0.76%  log.(*Logger).Println
+         0     0% 92.40%  2334.12MB  1.10%  main.main
+         0     0% 92.40% 31152.12MB 14.62%  marketingPlatform/ak/control/filecache.(*FileCache).Get (inline)
+         0     0% 92.40%  2322.61MB  1.09%  marketingPlatform/ak/control/filecache.NewFileCache
+         0     0% 92.40%  2334.12MB  1.10%  marketingPlatform/ak/daemonize.(*Daemonizer).Daemonize
+         0     0% 92.40%  1267.35MB  0.59%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).corsPolicyMiddleware.func1
+         0     0% 92.40% 98781.68MB 46.35%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getWebLayerStaticFile
+         0     0% 92.40% 13962.44MB  6.55%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).keyFunc
+         0     0% 92.40%  4222.04MB  1.98%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).popupEvent
+         0     0% 92.40%  4222.04MB  1.98%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.asyncReq.func3
+         0     0% 92.40% 98781.68MB 46.35%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.getFile.func2
+         0     0% 92.40%  8993.85MB  4.22%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).getAcidByClientFPrint
+         0     0% 92.40%  8189.68MB  3.84%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).overwriteAcid
+         0     0% 92.40%  3506.31MB  1.65%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).setAcidToCache
+         0     0% 92.40%  2457.30MB  1.15%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.FingerPrintBuilder.Parse
+         0     0% 92.40% 97869.63MB 45.92%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).GetFile
+         0     0% 92.40% 98781.68MB 46.35%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).GetStaticFile
+         0     0% 92.40% 10930.36MB  5.13%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).getCompressedFile
+         0     0% 92.40% 31174.27MB 14.63%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.receiveCompressedFile
+         0     0% 92.40%  1366.19MB  0.64%  marketingPlatform/ak/rmq/publisher.(*Publisher).publishMsg
+         0     0% 92.40%  1725.22MB  0.81%  marketingPlatform/ak/rmq/publisher.(*Publisher).runPublish.func1
+         0     0% 92.40%  1296.30MB  0.61%  mime/multipart.(*Part).FormName (inline)
+         0     0% 92.40%  1296.30MB  0.61%  mime/multipart.(*Part).parseContentDisposition
+         0     0% 92.40%  4546.93MB  2.13%  mime/multipart.(*Part).populateHeaders
+         0     0% 92.40%  5152.49MB  2.42%  mime/multipart.(*Reader).NextPart (inline)
+         0     0% 92.40%  9126.33MB  4.28%  mime/multipart.(*Reader).ReadForm (inline)
+         0     0% 92.40%  5152.49MB  2.42%  mime/multipart.(*Reader).nextPart
+         0     0% 92.40% 13909.93MB  6.53%  net/http.(*Request).PostFormValue
+         0     0% 92.40%  3345.55MB  1.57%  net/http.(*Request).multipartReader
+         0     0% 92.40%  1728.10MB  0.81%  net/http.(*response).WriteHeader
+         0     0% 92.40%  1711.62MB   0.8%  net/http.Header.Set (inline)
+         0     0% 92.40% 197167.47MB 92.51%  net/http.serverHandler.ServeHTTP
+         0     0% 92.40%  2353.16MB  1.10%  runtime.main
+         0     0% 92.40%  2317.86MB  1.09%  strings.Split (inline)
+         0     0% 92.40% 65500.55MB 30.73%  text/template.(*Template).Execute (inline)
+         0     0% 92.40% 65480.05MB 30.72%  text/template.(*state).walk

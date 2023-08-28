@@ -1,0 +1,65 @@
+File: trkwebctrl
+Build ID: 2a6e97ebd0584c23046de2e113885e697b606e55
+Type: goroutine
+Time: Aug 14, 2023 at 6:16pm (MSK)
+Showing nodes accounting for 784, 98.12% of 799 total
+Dropped 83 nodes (cum <= 3)
+      flat  flat%   sum%        cum   cum%
+       781 97.75% 97.75%        781 97.75%  runtime.gopark
+         3  0.38% 98.12%          3  0.38%  runtime.newobject
+         0     0% 98.12%        350 43.80%  bufio.(*Reader).Peek
+         0     0% 98.12%          6  0.75%  bufio.(*Reader).Read
+         0     0% 98.12%        350 43.80%  bufio.(*Reader).fill
+         0     0% 98.12%          4   0.5%  github.com/allegro/bigcache/v3.newBigCache.func1
+         0     0% 98.12%        194 24.28%  github.com/gin-gonic/gin.(*Context).Next (inline)
+         0     0% 98.12%        194 24.28%  github.com/gin-gonic/gin.(*Engine).ServeHTTP
+         0     0% 98.12%        194 24.28%  github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+         0     0% 98.12%        189 23.65%  github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+         0     0% 98.12%          7  0.88%  github.com/patrickmn/go-cache.(*janitor).Run
+         0     0% 98.12%          5  0.63%  github.com/streadway/amqp.(*Connection).heartbeater
+         0     0% 98.12%          5  0.63%  github.com/streadway/amqp.(*Connection).reader
+         0     0% 98.12%          5  0.63%  github.com/streadway/amqp.(*reader).ReadFrame
+         0     0% 98.12%        544 68.09%  internal/poll.(*FD).Read
+         0     0% 98.12%        544 68.09%  internal/poll.(*pollDesc).wait
+         0     0% 98.12%        544 68.09%  internal/poll.(*pollDesc).waitRead (inline)
+         0     0% 98.12%        544 68.09%  internal/poll.runtime_pollWait
+         0     0% 98.12%          6  0.75%  io.ReadAtLeast
+         0     0% 98.12%          6  0.75%  io.ReadFull (inline)
+         0     0% 98.12%        186 23.28%  log.(*Logger).Output
+         0     0% 98.12%         90 11.26%  log.(*Logger).Printf
+         0     0% 98.12%         94 11.76%  log.(*Logger).Println
+         0     0% 98.12%          4   0.5%  marketingPlatform/ak/journal.jrnLogger.WriteJRNFormat
+         0     0% 98.12%         95 11.89%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getPopupEnv
+         0     0% 98.12%         96 12.02%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).popupEnv
+         0     0% 98.12%         92 11.51%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).specifyAci
+         0     0% 98.12%        188 23.53%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.syncReq.func2
+         0     0% 98.12%        184 23.03%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).RestoreAcidProccesing
+         0     0% 98.12%         29  3.63%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).getAcidByClientFPrint
+         0     0% 98.12%         33  4.13%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).getAcidByServerFPrint
+         0     0% 98.12%          5  0.63%  marketingPlatform/ak/profiler.(*baseProfiler).profiling
+         0     0% 98.12%          4   0.5%  marketingPlatform/ak/profiler.(*baseProfiler).profiling.func3
+         0     0% 98.12%          5  0.63%  marketingPlatform/ak/profiler.(*baseProfiler).run.func1.1
+         0     0% 98.12%          5  0.63%  marketingPlatform/ak/rmq/publisher.(*AmqPublisher).Run.func1
+         0     0% 98.12%          5  0.63%  marketingPlatform/ak/rmq/publisher.(*Publisher).run.func1
+         0     0% 98.12%          5  0.63%  marketingPlatform/ak/rmq/publisher.(*Publisher).runPublish.func1
+         0     0% 98.12%          5  0.63%  marketingPlatform/ak/rmq/publisher.(*Publisher).runPublish.func2
+         0     0% 98.12%        194 24.28%  marketingPlatform/ak/tools/ginlogger.middleware.func1
+         0     0% 98.12%        544 68.09%  net.(*conn).Read
+         0     0% 98.12%        544 68.09%  net.(*netFD).Read
+         0     0% 98.12%        350 43.80%  net/http.(*conn).readRequest
+         0     0% 98.12%        544 68.09%  net/http.(*conn).serve
+         0     0% 98.12%        350 43.80%  net/http.(*connReader).Read
+         0     0% 98.12%        188 23.53%  net/http.(*connReader).backgroundRead
+         0     0% 98.12%        194 24.28%  net/http.serverHandler.ServeHTTP
+         0     0% 98.12%          8  1.00%  runtime.chanrecv
+         0     0% 98.12%          4   0.5%  runtime.chanrecv1
+         0     0% 98.12%          4   0.5%  runtime.chanrecv2
+         0     0% 98.12%        187 23.40%  runtime.goparkunlock (inline)
+         0     0% 98.12%        544 68.09%  runtime.netpollblock
+         0     0% 98.12%         41  5.13%  runtime.selectgo
+         0     0% 98.12%        187 23.40%  runtime.semacquire1
+         0     0% 98.12%          4   0.5%  runtime/pprof.(*Profile).WriteTo
+         0     0% 98.12%          3  0.38%  runtime/pprof.(*profileBuilder).appendLocsForStack
+         0     0% 98.12%        186 23.28%  sync.(*Mutex).Lock (inline)
+         0     0% 98.12%        186 23.28%  sync.(*Mutex).lockSlow
+         0     0% 98.12%        186 23.28%  sync.runtime_SemacquireMutex

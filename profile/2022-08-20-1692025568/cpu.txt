@@ -1,0 +1,292 @@
+File: trkwebctrl
+Build ID: 2a6e97ebd0584c23046de2e113885e697b606e55
+Type: cpu
+Time: Aug 14, 2023 at 6:06pm (MSK)
+Duration: 600.11s, Total samples = 2396.06s (399.27%)
+Showing nodes accounting for 1708.32s, 71.30% of 2396.06s total
+Dropped 1733 nodes (cum <= 11.98s)
+      flat  flat%   sum%        cum   cum%
+   340.75s 14.22% 14.22%    340.75s 14.22%  runtime/internal/syscall.Syscall6
+   156.32s  6.52% 20.75%    232.87s  9.72%  encoding/json.compact
+    80.15s  3.35% 24.09%        89s  3.71%  runtime.findObject
+    70.12s  2.93% 27.02%    174.49s  7.28%  runtime.pcvalue
+    66.24s  2.76% 29.78%     66.24s  2.76%  runtime.memmove
+    65.73s  2.74% 32.52%     66.90s  2.79%  github.com/mr-tron/base58/base58.FastBase58EncodingAlphabet
+    63.22s  2.64% 35.16%     79.08s  3.30%  runtime.step
+    53.51s  2.23% 37.40%     55.98s  2.34%  encoding/json.stateInString
+    51.55s  2.15% 39.55%    234.05s  9.77%  runtime.gentraceback
+    49.76s  2.08% 41.62%     59.31s  2.48%  github.com/json-iterator/go.writeStringSlowPathWithHTMLEscaped
+    44.70s  1.87% 43.49%    224.54s  9.37%  runtime.mallocgc
+    42.70s  1.78% 45.27%     51.99s  2.17%  runtime.heapBitsSetType
+    39.27s  1.64% 46.91%     39.27s  1.64%  runtime.memclrNoHeapPointers
+    37.37s  1.56% 48.47%    201.91s  8.43%  runtime.scanobject
+    30.35s  1.27% 49.74%     30.35s  1.27%  runtime.heapBits.bits (inline)
+    27.19s  1.13% 50.87%     27.19s  1.13%  runtime.nextFreeFast (inline)
+    26.25s  1.10% 51.97%     26.25s  1.10%  runtime.markBits.isMarked (inline)
+    18.63s  0.78% 52.75%     39.86s  1.66%  compress/flate.(*compressor).deflate
+    17.94s  0.75% 53.49%     17.94s  0.75%  runtime.futex
+    17.63s  0.74% 54.23%     17.63s  0.74%  runtime.(*moduledata).textAddr
+    17.35s  0.72% 54.95%     18.86s  0.79%  runtime.findfunc
+    16.37s  0.68% 55.64%     16.37s  0.68%  runtime.epollwait
+    16.34s  0.68% 56.32%     27.39s  1.14%  runtime.mapaccess1_faststr
+    15.86s  0.66% 56.98%     15.86s  0.66%  runtime.readvarint (inline)
+    14.61s  0.61% 57.59%     14.61s  0.61%  runtime.usleep
+       12s   0.5% 58.09%     12.59s  0.53%  runtime.heapBitsForAddr (inline)
+    10.05s  0.42% 58.51%     69.42s  2.90%  github.com/json-iterator/go.(*Stream).WriteStringWithHTMLEscaped
+     8.86s  0.37% 58.88%     13.43s  0.56%  runtime.mapiternext
+     8.51s  0.36% 59.24%     29.76s  1.24%  runtime.mapassign_faststr
+     8.29s  0.35% 59.58%     28.61s  1.19%  fmt.(*pp).doPrintf
+     7.91s  0.33% 59.91%     69.77s  2.91%  runtime.growslice
+     7.79s  0.33% 60.24%     25.42s  1.06%  runtime.funcInfo.entry (partial-inline)
+     7.74s  0.32% 60.56%     32.93s  1.37%  fmt.(*pp).printArg
+     7.37s  0.31% 60.87%     26.82s  1.12%  runtime.gcWriteBarrier
+     6.22s  0.26% 61.13%     80.64s  3.37%  runtime.newobject (partial-inline)
+     6.04s  0.25% 61.38%     76.79s  3.20%  runtime.findRunnable
+     5.81s  0.24% 61.62%    152.92s  6.38%  github.com/json-iterator/go.(*structEncoder).Encode
+     5.81s  0.24% 61.86%     16.51s  0.69%  runtime.getitab
+     5.68s  0.24% 62.10%     24.64s  1.03%  runtime.wbBufFlush1
+     5.53s  0.23% 62.33%     48.81s  2.04%  runtime.greyobject
+     5.34s  0.22% 62.56%     12.85s  0.54%  sync.(*Pool).Get
+     4.84s   0.2% 62.76%     93.96s  3.92%  runtime.schedule
+     4.30s  0.18% 62.94%     29.79s  1.24%  runtime.stealWork
+     4.21s  0.18% 63.11%   1540.91s 64.31%  marketingPlatform/ak/tools/ginlogger.middleware.func1
+        4s  0.17% 63.28%    507.54s 21.18%  runtime.systemstack
+     3.95s  0.16% 63.44%     18.54s  0.77%  log.(*Logger).formatHeader
+     3.95s  0.16% 63.61%    191.50s  7.99%  runtime.gcDrain
+     3.68s  0.15% 63.76%     49.62s  2.07%  net/http.(*chunkWriter).writeHeader
+     3.68s  0.15% 63.92%     18.50s  0.77%  runtime.runqgrab
+     3.49s  0.15% 64.06%     43.02s  1.80%  runtime.makeslice
+     3.41s  0.14% 64.20%    193.57s  8.08%  sync.(*Mutex).lockSlow
+     3.33s  0.14% 64.34%     23.28s  0.97%  net/http.Header.writeSubset
+     3.27s  0.14% 64.48%    375.63s 15.68%  log.(*Logger).Output
+     3.13s  0.13% 64.61%     14.37s   0.6%  runtime.(*mheap).allocSpan
+     3.09s  0.13% 64.74%   1542.27s 64.37%  github.com/gin-gonic/gin.(*Context).Next (inline)
+     2.99s  0.12% 64.86%     13.25s  0.55%  runtime.sweepone
+     2.95s  0.12% 64.99%    140.19s  5.85%  github.com/json-iterator/go.(*sortKeysMapEncoder).Encode
+     2.83s  0.12% 65.11%    286.38s 11.95%  internal/poll.(*FD).Write
+     2.83s  0.12% 65.22%    134.96s  5.63%  net/http.(*conn).readRequest
+     2.73s  0.11% 65.34%     28.33s  1.18%  runtime.slicebytetostring
+     2.73s  0.11% 65.45%     19.15s   0.8%  sync.(*Mutex).Unlock (partial-inline)
+     2.71s  0.11% 65.56%     13.67s  0.57%  runtime.typedmemmove
+     2.58s  0.11% 65.67%     22.62s  0.94%  strings.genSplit
+     2.57s  0.11% 65.78%    131.51s  5.49%  io.(*multiWriter).Write
+     2.55s  0.11% 65.89%     72.01s  3.01%  github.com/json-iterator/go.(*htmlEscapedStringEncoder).Encode
+     2.51s   0.1% 65.99%   1862.36s 77.73%  net/http.(*conn).serve
+     2.50s   0.1% 66.09%     19.52s  0.81%  runtime.netpoll
+     2.48s   0.1% 66.20%    144.74s  6.04%  github.com/json-iterator/go.(*structFieldEncoder).Encode
+     2.47s   0.1% 66.30%     15.04s  0.63%  runtime.semrelease1
+     2.27s 0.095% 66.40%     64.98s  2.71%  internal/poll.(*FD).Read
+     2.20s 0.092% 66.49%     12.47s  0.52%  net/textproto.MIMEHeader.Get
+     2.18s 0.091% 66.58%    346.47s 14.46%  syscall.Syscall
+     2.04s 0.085% 66.66%     29.12s  1.22%  runtime.(*mcache).refill
+     1.97s 0.082% 66.75%     40.07s  1.67%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.BuildFP
+     1.86s 0.078% 66.82%     45.25s  1.89%  net/textproto.(*Reader).ReadMIMEHeader
+     1.83s 0.076% 66.90%     29.63s  1.24%  runtime.(*Frames).Next
+     1.82s 0.076% 66.98%    175.04s  7.31%  bufio.(*Writer).Flush
+     1.80s 0.075% 67.05%     64.90s  2.71%  runtime.funcspdelta
+     1.78s 0.074% 67.13%     36.75s  1.53%  bufio.(*Reader).Peek
+     1.74s 0.073% 67.20%     13.21s  0.55%  fmt.(*pp).doPrint
+     1.74s 0.073% 67.27%     13.27s  0.55%  sync.(*Map).Load
+     1.73s 0.072% 67.34%    186.38s  7.78%  runtime.semacquire1
+     1.70s 0.071% 67.41%    233.81s  9.76%  runtime.callers
+     1.69s 0.071% 67.48%    276.96s 11.56%  syscall.write
+     1.68s  0.07% 67.55%    342.43s 14.29%  syscall.RawSyscall6
+     1.67s  0.07% 67.62%     19.43s  0.81%  runtime.(*mcentral).cacheSpan
+     1.66s 0.069% 67.69%    106.73s  4.45%  runtime.mcall
+     1.64s 0.068% 67.76%     21.74s  0.91%  bufio.(*Reader).ReadSlice
+     1.61s 0.067% 67.83%     29.26s  1.22%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.JoinFPs
+     1.55s 0.065% 67.89%     33.32s  1.39%  runtime.(*mcache).nextFree
+     1.46s 0.061% 67.95%     90.03s  3.76%  runtime.park_m
+     1.45s 0.061% 68.02%    155.89s  6.51%  net/http.(*response).finishRequest
+     1.42s 0.059% 68.07%     92.66s  3.87%  bufio.(*Writer).Write
+     1.36s 0.057% 68.13%    187.32s  7.82%  net.(*netFD).Write
+     1.36s 0.057% 68.19%     90.69s  3.78%  runtime.pcdatavalue
+     1.33s 0.056% 68.24%    334.78s 13.97%  internal/poll.ignoringEINTRIO (inline)
+     1.28s 0.053% 68.30%    128.78s  5.37%  marketingPlatform/ak/daemonlogger.(*LogFile).Write
+     1.23s 0.051% 68.35%     15.34s  0.64%  net/http.Header.Clone (inline)
+     1.23s 0.051% 68.40%     73.82s  3.08%  net/http.readRequest
+     1.17s 0.049% 68.45%     20.19s  0.84%  net/textproto.(*Reader).readLineSlice
+     1.15s 0.048% 68.50%        15s  0.63%  github.com/gin-gonic/gin.(*Context).Header
+     1.14s 0.048% 68.54%     72.22s  3.01%  net.(*conn).Read
+     1.12s 0.047% 68.59%     53.47s  2.23%  bufio.(*Reader).fill
+     1.06s 0.044% 68.64%     39.76s  1.66%  fmt.Sprintf
+     1.03s 0.043% 68.68%    194.60s  8.12%  sync.(*Mutex).Lock (inline)
+     1.01s 0.042% 68.72%     44.80s  1.87%  github.com/json-iterator/go.(*placeholderEncoder).Encode
+        1s 0.042% 68.76%        19s  0.79%  bufio.(*Reader).ReadLine
+        1s 0.042% 68.80%     15.12s  0.63%  github.com/gin-gonic/gin.(*Context).ClientIP
+     0.97s  0.04% 68.84%     37.62s  1.57%  bytes.(*Buffer).Write
+     0.97s  0.04% 68.88%     16.67s   0.7%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.FingerPrintBuilder.Parse
+     0.96s  0.04% 68.92%   1549.54s 64.67%  net/http.serverHandler.ServeHTTP
+     0.94s 0.039% 68.96%    205.88s  8.59%  runtime.saveblockevent
+     0.92s 0.038% 69.00%     18.06s  0.75%  crypto/rand.(*reader).Read
+     0.92s 0.038% 69.04%     49.18s  2.05%  net/http.(*connReader).Read
+     0.91s 0.038% 69.08%     56.29s  2.35%  syscall.read
+     0.90s 0.038% 69.12%     16.41s  0.68%  sync.(*Mutex).unlockSlow
+     0.89s 0.037% 69.15%     56.88s  2.37%  github.com/json-iterator/go.(*sliceEncoder).Encode
+     0.87s 0.036% 69.19%     21.24s  0.89%  io.ReadAtLeast
+     0.87s 0.036% 69.23%    101.47s  4.23%  os.(*File).write (inline)
+     0.86s 0.036% 69.26%     20.79s  0.87%  fmt.Append
+     0.84s 0.035% 69.30%     14.47s   0.6%  github.com/matoous/go-nanoid.Nanoid
+     0.83s 0.035% 69.33%     28.52s  1.19%  net/http.(*connReader).backgroundRead
+     0.78s 0.033% 69.36%     27.43s  1.14%  log.(*Logger).Writer
+     0.78s 0.033% 69.40%    385.42s 16.09%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).RestoreAcidProccesing
+     0.77s 0.032% 69.43%    231.65s  9.67%  runtime.callers.func1
+     0.76s 0.032% 69.46%    516.28s 21.55%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.syncReq.func2
+     0.76s 0.032% 69.49%     19.26s   0.8%  runtime.runqsteal
+     0.75s 0.031% 69.52%    171.06s  7.14%  github.com/json-iterator/go.(*OptionalEncoder).Encode
+     0.75s 0.031% 69.56%     41.43s  1.73%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).fillAndSendPopupEvent
+     0.75s 0.031% 69.59%    188.08s  7.85%  net.(*conn).Write
+     0.74s 0.031% 69.62%     19.61s  0.82%  crypto/rand.Read
+     0.74s 0.031% 69.65%    254.56s 10.62%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).deduplicationMiddleware.func2
+     0.73s  0.03% 69.68%     15.70s  0.66%  mime.ParseMediaType
+     0.71s  0.03% 69.71%    135.55s  5.66%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).overwriteAcid
+     0.70s 0.029% 69.74%    155.57s  6.49%  net/http.checkConnErrorWriter.Write
+     0.68s 0.028% 69.77%     32.53s  1.36%  net/http.(*connReader).abortPendingRead
+     0.67s 0.028% 69.79%    183.86s  7.67%  github.com/json-iterator/go.(*Stream).WriteVal
+     0.66s 0.028% 69.82%    119.49s  4.99%  github.com/json-iterator/go.(*dynamicEncoder).Encode
+     0.65s 0.027% 69.85%    102.19s  4.26%  os.(*File).Write
+     0.64s 0.027% 69.88%     64.73s  2.70%  net.(*netFD).Read
+     0.62s 0.026% 69.90%     52.38s  2.19%  io.copyBuffer
+     0.61s 0.025% 69.93%    143.59s  5.99%  marketingPlatform/ak/backendController.R.MarshalJSON
+     0.61s 0.025% 69.95%     14.33s   0.6%  sort.pdqsort_func
+     0.60s 0.025% 69.98%    194.72s  8.13%  log.(*Logger).Println
+     0.60s 0.025% 70.00%     18.12s  0.76%  marketingPlatform/ak/journal.jrnLogger.SetEmbedObject
+     0.59s 0.025% 70.03%    206.48s  8.62%  runtime.blockevent
+     0.58s 0.024% 70.05%    159.58s  6.66%  marketingPlatform/ak/journal.jrnLogger.WriteJRNFormat
+     0.57s 0.024% 70.07%   1548.14s 64.61%  github.com/gin-gonic/gin.(*Engine).ServeHTTP
+     0.57s 0.024% 70.10%     64.46s  2.69%  net/http.(*Request).ParseMultipartForm
+     0.57s 0.024% 70.12%     68.96s  2.88%  runtime.Caller
+     0.54s 0.023% 70.14%     15.56s  0.65%  sync.runtime_Semrelease
+     0.53s 0.022% 70.17%     25.68s  1.07%  bytes.(*Buffer).grow
+     0.53s 0.022% 70.19%     20.15s  0.84%  runtime.funcline1
+     0.52s 0.022% 70.21%    400.99s 16.74%  encoding/json.Marshal
+     0.52s 0.022% 70.23%    186.71s  7.79%  sync.runtime_SemacquireMutex
+     0.51s 0.021% 70.25%     16.81s   0.7%  crypto/rand.batched.func1
+     0.51s 0.021% 70.27%     23.20s  0.97%  mime/multipart.(*Reader).nextPart
+     0.50s 0.021% 70.30%    440.85s 18.40%  github.com/gin-gonic/gin/render.WriteJSON
+     0.50s 0.021% 70.32%     23.41s  0.98%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.getServerFprint
+     0.49s  0.02% 70.34%     19.31s  0.81%  github.com/allegro/bigcache/v3.(*BigCache).Get
+     0.49s  0.02% 70.36%     17.74s  0.74%  github.com/leprosus/golang-ttl-map.(*Heap).Save
+     0.48s  0.02% 70.38%     43.90s  1.83%  github.com/streadway/amqp.(*Channel).sendOpen
+     0.48s  0.02% 70.40%     15.37s  0.64%  runtime.(*mheap).alloc
+     0.47s  0.02% 70.42%     16.09s  0.67%  internal/syscall/unix.GetRandom
+     0.47s  0.02% 70.44%     16.89s   0.7%  sort.Slice
+     0.46s 0.019% 70.46%    442.12s 18.45%  github.com/gin-gonic/gin.(*Context).Render
+     0.46s 0.019% 70.48%   1544.99s 64.48%  github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+     0.46s 0.019% 70.49%     44.66s  1.86%  mime/multipart.(*Reader).readForm
+     0.46s 0.019% 70.51%     17.41s  0.73%  net/http.(*response).WriteHeader
+     0.45s 0.019% 70.53%    323.70s 13.51%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getPopupEnv
+     0.44s 0.018% 70.55%    377.57s 15.76%  encoding/json.marshalerEncoder
+     0.44s 0.018% 70.57%     45.87s  1.91%  github.com/streadway/amqp.(*Channel).Publish
+     0.44s 0.018% 70.59%     11.98s   0.5%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).corsPolicyMiddleware.func1
+     0.44s 0.018% 70.61%    112.56s  4.70%  net/http.(*chunkWriter).Write
+     0.44s 0.018% 70.62%     22.89s  0.96%  sync.(*Cond).Wait
+     0.42s 0.018% 70.64%    153.22s  6.39%  github.com/json-iterator/go.(*onePtrEncoder).Encode
+     0.41s 0.017% 70.66%    149.73s  6.25%  github.com/json-iterator/go.(*frozenConfig).Marshal
+     0.39s 0.016% 70.68%    389.12s 16.24%  encoding/json.(*encodeState).reflectValue
+     0.38s 0.016% 70.69%     18.70s  0.78%  runtime.gcDrainN
+     0.37s 0.015% 70.71%   1300.42s 54.27%  github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+     0.37s 0.015% 70.72%     38.15s  1.59%  github.com/streadway/amqp.(*writer).WriteFrame
+     0.37s 0.015% 70.74%     12.74s  0.53%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getPopupContent
+     0.37s 0.015% 70.75%     13.30s  0.56%  net/textproto.MIMEHeader.Set (inline)
+     0.36s 0.015% 70.77%     16.56s  0.69%  mime/multipart.newPart
+     0.35s 0.015% 70.78%     87.80s  3.66%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).getFileData
+     0.34s 0.014% 70.80%    115.55s  4.82%  github.com/yangxikun/gin-limit-by-key.NewRateLimiter.func1
+     0.33s 0.014% 70.81%    337.67s 14.09%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).popupEnv
+     0.33s 0.014% 70.82%     98.39s  4.11%  marketingPlatform/ak/rmq/publisher.(*Publisher).runPublish.func1
+     0.32s 0.013% 70.84%     19.63s  0.82%  marketingPlatform/ak/control/filecache.(*FileCache).Get (inline)
+     0.32s 0.013% 70.85%     13.66s  0.57%  marketingPlatform/ak/tools.ParseCombinedID
+     0.31s 0.013% 70.86%     41.29s  1.72%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).sendPopupFormData
+     0.30s 0.013% 70.88%     16.60s  0.69%  marketingPlatform/ak/object_logger.HandleObject.MarshalJrnObject
+     0.30s 0.013% 70.89%     35.49s  1.48%  text/template.(*state).walk
+     0.29s 0.012% 70.90%     40.89s  1.71%  github.com/streadway/amqp.(*Connection).send
+     0.29s 0.012% 70.91%     14.58s  0.61%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.validateFormFields
+     0.27s 0.011% 70.92%     18.17s  0.76%  syscall.openat
+     0.26s 0.011% 70.94%    101.97s  4.26%  github.com/gin-gonic/gin.(*responseWriter).Write
+     0.26s 0.011% 70.95%     91.19s  3.81%  net/http.(*response).write
+     0.25s  0.01% 70.96%     51.69s  2.16%  marketingPlatform/ak/rmq/publisher.(*Publisher).publishMsg
+     0.24s  0.01% 70.97%     24.38s  1.02%  bytes.growSlice
+     0.24s  0.01% 70.98%     13.16s  0.55%  marketingPlatform/ak/drivers/mongodb/mgoaccounts/popups.ValidationParamFields
+     0.24s  0.01% 70.99%    422.90s 17.65%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.syncReq.func3
+     0.24s  0.01% 71.00%     96.88s  4.04%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).getAcidByClientFPrint
+     0.24s  0.01% 71.01%     19.48s  0.81%  os.openFileNolog
+     0.24s  0.01% 71.02%     14.69s  0.61%  runtime.(*mheap).alloc.func1
+     0.23s 0.0096% 71.03%     14.91s  0.62%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).sendPopupEvent
+     0.23s 0.0096% 71.04%     65.46s  2.73%  net/http.(*Request).PostFormValue
+     0.22s 0.0092% 71.04%     16.72s   0.7%  github.com/smallnest/rpcx/client.(*Client).input
+     0.22s 0.0092% 71.05%     13.18s  0.55%  runtime.(*mcentral).grow
+     0.21s 0.0088% 71.06%     16.30s  0.68%  crypto/rand.getRandom
+     0.21s 0.0088% 71.07%    145.95s  6.09%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getWebLayerStaticFile
+     0.21s 0.0088% 71.08%    146.16s  6.10%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.getFile.func2
+     0.20s 0.0083% 71.09%     16.25s  0.68%  github.com/json-iterator/go.(*Decoder).Decode
+     0.20s 0.0083% 71.10%     44.10s  1.84%  github.com/streadway/amqp.(*Channel).send
+     0.18s 0.0075% 71.10%    389.93s 16.27%  encoding/json.(*encodeState).marshal
+     0.18s 0.0075% 71.11%     12.80s  0.53%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).decryptСombinedID
+     0.18s 0.0075% 71.12%     18.15s  0.76%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).popupContent
+     0.18s 0.0075% 71.13%     45.24s  1.89%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).popupEvent
+     0.18s 0.0075% 71.13%     19.91s  0.83%  os.OpenFile
+     0.18s 0.0075% 71.14%     56.47s  2.36%  syscall.Read (inline)
+     0.17s 0.0071% 71.15%     45.41s  1.90%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.asyncReq.func3
+     0.17s 0.0071% 71.16%     43.55s  1.82%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).getAcidByServerFPrint
+     0.17s 0.0071% 71.16%     21.69s  0.91%  sync.runtime_notifyListWait
+     0.16s 0.0067% 71.17%     17.57s  0.73%  github.com/gin-gonic/gin.(*responseWriter).WriteHeaderNow (partial-inline)
+     0.16s 0.0067% 71.18%     51.64s  2.16%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).renderedTagManagerScript
+     0.16s 0.0067% 71.18%     91.35s  3.81%  net/http.(*response).Write
+     0.15s 0.0063% 71.19%     67.49s  2.82%  log.(*Logger).Printf
+     0.15s 0.0063% 71.20%     24.92s  1.04%  runtime.wbBufFlush
+     0.15s 0.0063% 71.20%     16.87s   0.7%  syscall.Syscall6
+     0.14s 0.0058% 71.21%     12.97s  0.54%  mime/multipart.(*Part).populateHeaders
+     0.13s 0.0054% 71.21%     12.95s  0.54%  net/http.(*chunkWriter).close
+     0.12s 0.005% 71.22%     96.94s  4.05%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).specifyAci
+     0.11s 0.0046% 71.22%     17.89s  0.75%  github.com/allegro/bigcache/v3.(*cacheShard).get
+     0.11s 0.0046% 71.23%     12.97s  0.54%  github.com/json-iterator/go.(*Iterator).ReadVal
+     0.11s 0.0046% 71.23%     88.16s  3.68%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).GetFile
+     0.11s 0.0046% 71.24%     18.91s  0.79%  runtime.gcAssistAlloc
+     0.10s 0.0042% 71.24%     66.20s  2.76%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).takeLimitKey
+     0.10s 0.0042% 71.25%     22.57s  0.94%  strings.Split (inline)
+     0.09s 0.0038% 71.25%     35.72s  1.49%  text/template.(*Template).execute
+     0.08s 0.0033% 71.25%     14.12s  0.59%  github.com/leprosus/golang-ttl-map.(*Heap).handle
+     0.08s 0.0033% 71.26%     22.95s  0.96%  marketingPlatform/ak/drivers/ttl.(*WebDeduplicationDB).Put
+     0.08s 0.0033% 71.26%     28.42s  1.19%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).getAcidFromCache
+     0.08s 0.0033% 71.26%     74.10s  3.09%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.encodeAcidCookieValue
+     0.08s 0.0033% 71.27%    145.47s  6.07%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).GetStaticFile
+     0.08s 0.0033% 71.27%     26.65s  1.11%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).renderedPopupLibrary
+     0.07s 0.0029% 71.27%     26.86s  1.12%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getTemplateVariables
+     0.07s 0.0029% 71.27%     66.27s  2.77%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).keyFunc
+     0.06s 0.0025% 71.28%     12.38s  0.52%  github.com/segmentio/encoding/json.Parse
+     0.06s 0.0025% 71.28%     44.72s  1.87%  mime/multipart.(*Reader).ReadForm (inline)
+     0.05s 0.0021% 71.28%     24.69s  1.03%  runtime.wbBufFlush.func1
+     0.04s 0.0017% 71.28%     66.94s  2.79%  github.com/mr-tron/base58/base58.FastBase58Encoding (inline)
+     0.04s 0.0017% 71.29%     17.30s  0.72%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.receiveCompressedFile
+     0.03s 0.0013% 71.29%     15.64s  0.65%  github.com/allegro/bigcache/v3.readEntry (inline)
+     0.03s 0.0013% 71.29%    442.73s 18.48%  github.com/gin-gonic/gin.(*Context).JSON (inline)
+     0.03s 0.0013% 71.29%     12.42s  0.52%  marketingPlatform/ak/proc/procrpc/rpccodecs.(*SegmentioCodec).Decode
+     0.03s 0.0013% 71.29%     26.24s  1.10%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).setAcidToCache
+     0.03s 0.0013% 71.29%     19.41s  0.81%  net/textproto.(*Reader).ReadLine (inline)
+     0.02s 0.00083% 71.29%     21.26s  0.89%  io.ReadFull (inline)
+     0.02s 0.00083% 71.29%     23.22s  0.97%  mime/multipart.(*Reader).NextPart (inline)
+     0.02s 0.00083% 71.29%     18.77s  0.78%  runtime.gcAssistAlloc1
+     0.02s 0.00083% 71.29%    276.98s 11.56%  syscall.Write (inline)
+     0.01s 0.00042% 71.30%    440.86s 18.40%  github.com/gin-gonic/gin/render.JSON.Render
+     0.01s 0.00042% 71.30%     12.39s  0.52%  github.com/segmentio/encoding/json.Unmarshal
+     0.01s 0.00042% 71.30%     52.39s  2.19%  io.Copy (inline)
+     0.01s 0.00042% 71.30%     13.28s  0.55%  runtime.bgsweep
+     0.01s 0.00042% 71.30%     18.18s  0.76%  syscall.Open (inline)
+         0     0% 71.30%     40.37s  1.68%  compress/flate.(*Writer).Write (inline)
+         0     0% 71.30%     40.37s  1.68%  compress/flate.(*compressor).write
+         0     0% 71.30%     41.46s  1.73%  compress/gzip.(*Writer).Write
+         0     0% 71.30%     14.47s   0.6%  github.com/matoous/go-nanoid.ID (inline)
+         0     0% 71.30%     66.94s  2.79%  github.com/mr-tron/base58/base58.Encode (inline)
+         0     0% 71.30%     42.67s  1.78%  marketingPlatform/ak/daemonlogger.(*LogFile).CheckFileSizeOnce
+         0     0% 71.30%     42.65s  1.78%  marketingPlatform/ak/daemonlogger.(*LogFile).compressFile
+         0     0% 71.30%     42.65s  1.78%  marketingPlatform/ak/daemonlogger.(*LogFile).compressFiles
+         0     0% 71.30%     42.67s  1.78%  marketingPlatform/ak/daemonlogger.(*LogFile).manageFiles
+         0     0% 71.30%     42.67s  1.78%  marketingPlatform/ak/daemonlogger.(*LogFile).openFile
+         0     0% 71.30%     42.67s  1.78%  marketingPlatform/ak/daemonlogger.(*LogFile).rotateFile
+         0     0% 71.30%     42.67s  1.78%  marketingPlatform/ak/daemonlogger.(*LogFile).watchFileSize
+         0     0% 71.30%     13.30s  0.56%  net/http.Header.Set (inline)
+         0     0% 71.30%     23.28s  0.97%  net/http.Header.WriteSubset (inline)
+         0     0% 71.30%     18.77s  0.78%  runtime.gcAssistAlloc.func1
+         0     0% 71.30%    191.61s  8.00%  runtime.gcBgMarkWorker
+         0     0% 71.30%    191.50s  7.99%  runtime.gcBgMarkWorker.func2
+         0     0% 71.30%     35.72s  1.49%  text/template.(*Template).Execute (inline)

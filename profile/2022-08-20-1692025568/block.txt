@@ -1,0 +1,52 @@
+File: trkwebctrl
+Build ID: 2a6e97ebd0584c23046de2e113885e697b606e55
+Type: delay
+Time: Aug 14, 2023 at 6:16pm (MSK)
+Showing nodes accounting for 100.35hrs, 99.62% of 100.73hrs total
+Dropped 200 nodes (cum <= 0.50hrs)
+      flat  flat%   sum%        cum   cum%
+  60.26hrs 59.82% 59.82%   60.26hrs 59.82%  sync.(*Mutex).Lock (inline)
+  34.80hrs 34.55% 94.37%   34.80hrs 34.55%  runtime.chansend1
+   4.65hrs  4.62% 98.99%    4.65hrs  4.62%  runtime.selectgo
+   0.63hrs  0.63% 99.62%    0.63hrs  0.63%  runtime.chanrecv1
+         0     0% 99.62%   96.97hrs 96.26%  github.com/gin-gonic/gin.(*Context).Next (inline)
+         0     0% 99.62%   96.97hrs 96.26%  github.com/gin-gonic/gin.(*Engine).ServeHTTP
+         0     0% 99.62%   96.97hrs 96.26%  github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+         0     0% 99.62%   57.17hrs 56.75%  github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+         0     0% 99.62%    0.88hrs  0.87%  github.com/patrickmn/go-cache.(*janitor).Run
+         0     0% 99.62%    1.85hrs  1.84%  github.com/smallnest/rpcx/client.(*Client).Call
+         0     0% 99.62%    1.85hrs  1.84%  github.com/smallnest/rpcx/client.(*Client).call
+         0     0% 99.62%    1.85hrs  1.84%  github.com/smallnest/rpcx/client.(*xClient).Call
+         0     0% 99.62%    1.85hrs  1.84%  github.com/smallnest/rpcx/client.(*xClient).wrapCall
+         0     0% 99.62%    0.80hrs  0.79%  github.com/streadway/amqp.(*Connection).heartbeater
+         0     0% 99.62%   26.09hrs 25.90%  github.com/yangxikun/gin-limit-by-key.NewRateLimiter.func1
+         0     0% 99.62%   41.83hrs 41.53%  log.(*Logger).Output
+         0     0% 99.62%    3.70hrs  3.68%  log.(*Logger).Printf
+         0     0% 99.62%   16.33hrs 16.22%  log.(*Logger).Println
+         0     0% 99.62%   18.01hrs 17.88%  log.(*Logger).Writer
+         0     0% 99.62%   39.80hrs 39.51%  marketingPlatform/ak/journal.jrnLogger.WriteJRNFormat
+         0     0% 99.62%    1.85hrs  1.84%  marketingPlatform/ak/proc/procrpc/rpccli.(*RPCClient).Call
+         0     0% 99.62%   41.56hrs 41.25%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).deduplicationMiddleware.func2
+         0     0% 99.62%   34.84hrs 34.58%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).fillAndSendPopupEvent
+         0     0% 99.62%   10.24hrs 10.17%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getPopupEnv
+         0     0% 99.62%    3.25hrs  3.22%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getTemplateVariables
+         0     0% 99.62%    1.72hrs  1.71%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).getWebLayerStaticFile
+         0     0% 99.62%   10.25hrs 10.18%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).popupEnv
+         0     0% 99.62%   26.07hrs 25.88%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).popupEvent
+         0     0% 99.62%   34.80hrs 34.55%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).sendPopupEvent
+         0     0% 99.62%    8.84hrs  8.77%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).sendPopupFormData
+         0     0% 99.62%    3.63hrs  3.60%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.(*TrackingWebControl).specifyAci
+         0     0% 99.62%   26.07hrs 25.88%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.asyncReq.func3
+         0     0% 99.62%    1.72hrs  1.71%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.getFile.func2
+         0     0% 99.62%   22.72hrs 22.55%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol.syncReq.func2
+         0     0% 99.62%   10.62hrs 10.55%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).RestoreAcidProccesing
+         0     0% 99.62%    2.23hrs  2.22%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).getAcidByClientFPrint
+         0     0% 99.62%    1.82hrs  1.81%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/matching_service.(*MatchingService).getAcidByServerFPrint
+         0     0% 99.62%    1.72hrs  1.71%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).GetFile
+         0     0% 99.62%    1.72hrs  1.71%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).GetStaticFile
+         0     0% 99.62%    1.71hrs  1.70%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).getContainerComponents
+         0     0% 99.62%    1.72hrs  1.71%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).getFileData
+         0     0% 99.62%    1.72hrs  1.71%  marketingPlatform/ak/proc/tracking/trkwebctrl/trackingwebcontrol/services/static_service/web_layer.(*WebLayerStaticService).renderedTagManagerScript
+         0     0% 99.62%   96.97hrs 96.26%  marketingPlatform/ak/tools/ginlogger.middleware.func1
+         0     0% 99.62%   97.02hrs 96.31%  net/http.(*conn).serve
+         0     0% 99.62%   96.97hrs 96.26%  net/http.serverHandler.ServeHTTP
